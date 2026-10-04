@@ -448,3 +448,220 @@ textarea:focus-visible{
   .not-found-page{min-height:78vh;padding:9vw 6vw}
   .not-found-page h1{font-size:clamp(88px,7vw,132px)}
 }
+
+
+/* Cross-device responsive QA pass */
+html,body{max-width:100%;overflow-x:clip}
+img{max-width:100%}
+main{min-width:0}
+.button,.text-link,.course-row,.portfolio-item{-webkit-tap-highlight-color:transparent}
+.mobile-menu{
+  visibility:hidden;
+  pointer-events:none;
+  transition:transform .6s cubic-bezier(.77,0,.18,1),visibility 0s linear .6s;
+}
+.mobile-menu.is-open{
+  visibility:visible;
+  pointer-events:auto;
+  transition-delay:0s;
+}
+.hero-content,.page-hero-inner,.program-copy,.contact-details,.about-hero-copy,.academy-hero-copy,.student-hero-copy{min-width:0}
+.hero h1,.page-hero h1,.about-hero-copy h1,.academy-hero-copy h1,.student-hero-copy h1,.reviews-hero h1,.course-detail-copy h1{
+  overflow-wrap:anywhere;
+}
+.gallery-filter{scrollbar-width:none}
+.gallery-filter::-webkit-scrollbar,.drag-gallery::-webkit-scrollbar{display:none}
+.drag-gallery{scrollbar-width:none}
+.site-photo,.program-image img,.portfolio-item img,.about-hero-image img,.academy-hero-stack img,.student-hero-image img,.contact-photo-band img{
+  background:#eadbd6;
+}
+.lightbox{overscroll-behavior:contain}
+.lightbox-close{z-index:3}
+.enquiry-form input,.enquiry-form textarea{font-size:16px}
+.enquiry-form input::placeholder,.enquiry-form textarea::placeholder{color:#9b8c8e}
+.faq-accordion button{min-height:58px}
+.mobile-menu nav a{min-height:46px}
+
+@media (max-width:419px){
+  .announcement{
+    height:auto;
+    min-height:30px;
+    padding:7px 10px;
+    font-size:8px;
+    line-height:1.2;
+    letter-spacing:.08em;
+  }
+  .site-header{height:66px;padding:0 14px}
+  .brand{gap:8px}
+  .brand-mark{width:34px;height:34px;font-size:16px}
+  .brand strong{font-size:10px;letter-spacing:.1em}
+  .brand small{font-size:6.7px;letter-spacing:.15em}
+  .menu-toggle{width:40px;height:40px}
+  .hero{padding:58px 16px 38px;min-height:auto}
+  .hero h1{font-size:clamp(45px,14.5vw,57px);line-height:.88}
+  .hero-copy{font-size:12px;margin:22px 0}
+  .hero-actions{gap:8px}
+  .button{min-height:46px;padding:0 16px;font-size:11px}
+  .hero-signoff{margin-top:26px}
+  .hero-visual{height:46svh;min-height:280px;margin-top:28px}
+  .hero-frame-one{width:64%;height:84%}
+  .hero-frame-two{width:44%;height:57%}
+  .hero-caption{font-size:16px;max-width:145px}
+  .studio-strip{justify-content:flex-start;gap:9px;padding:14px 16px;font-size:7px;letter-spacing:.16em}
+  .section,.inner-section,.content-section{padding-left:16px;padding-right:16px}
+  .section{padding-top:72px;padding-bottom:72px}
+  .inner-section{padding-top:66px;padding-bottom:66px}
+  .split-heading h2,.section-top h2,.dark-section h2,.faq-preview h2{
+    font-size:clamp(42px,12.5vw,52px);
+  }
+  .editorial-grid{grid-template-columns:1fr;gap:14px}
+  .editorial-card.tall{grid-row:auto;min-height:470px}
+  .editorial-card{min-height:330px}
+  .editorial-note,.editorial-quote{grid-column:auto}
+  .editorial-note{padding-top:20px}
+  .course-row{grid-template-columns:28px minmax(0,1fr) 26px;gap:9px;padding:20px 0}
+  .course-row h3{font-size:27px}
+  .course-row p{font-size:10px}
+  .standard-row-2,.standard-row-4{padding-left:0}
+  .drag-gallery{margin-right:-16px;padding-right:16px}
+  .gallery-card{min-width:84vw;height:390px}
+  .bridal-band{padding:14px}
+  .bridal-band-art{height:62svh;min-height:360px}
+  .bridal-band-copy{padding:44px 2px 26px}
+  .bridal-band-copy h2{font-size:clamp(48px,14vw,58px)}
+  .testimonial-section blockquote{font-size:39px}
+  .faq-static p{font-size:19px}
+  .cta-section,.inner-cta{padding-left:16px;padding-right:16px}
+  .cta-section h2,.footer h2{font-size:clamp(48px,14vw,58px)}
+  .footer{padding-left:16px;padding-right:16px}
+  .footer-grid{grid-template-columns:1fr;gap:26px}
+  .footer-grid>div:first-child{grid-column:auto}
+  .footer-bottom{flex-direction:column;align-items:flex-start}
+  .page-hero{padding:76px 16px 58px;min-height:auto}
+  .page-hero h1{font-size:clamp(46px,14vw,58px)}
+  .page-hero-inner>p:not(.eyebrow){font-size:12px}
+  .page-hero-art span:first-child{width:78vw;height:78vw;right:-35vw}
+  .page-hero-art span:last-child{width:40vw;height:40vw;right:0}
+  .program-image,.course-detail-image,.about-hero-image,.student-hero-image,.academy-note-image{
+    min-height:360px;
+    height:58svh;
+  }
+  .program-copy h2{font-size:43px}
+  .course-detail-hero,.about-hero,.academy-hero,.student-hero{padding-left:16px;padding-right:16px;padding-top:64px;padding-bottom:64px}
+  .course-detail-copy h1,.about-hero-copy h1,.academy-hero-copy h1,.student-hero-copy h1,.reviews-hero h1{
+    font-size:clamp(46px,14vw,58px);
+  }
+  .course-detail-body{padding:66px 16px;gap:58px}
+  .course-who h2,.about-story h2,.academy-method h2,.reviews-copy h2,.faq-page-intro h2,.academy-note h2,.student-progress h2{
+    font-size:42px;
+  }
+  .course-info-band{margin-left:16px;margin-right:16px;grid-template-columns:1fr}
+  .course-info-band>div{min-height:auto}
+  .bridal-page-copy{padding:54px 16px}
+  .bridal-page-copy h1{font-size:clamp(50px,15vw,62px)}
+  .bridal-services,.about-principles,.review-types{margin-left:16px;margin-right:16px}
+  .bridal-editorial,.about-image-pair,.student-editorial{padding-left:16px;padding-right:16px}
+  .bridal-editorial-main{min-height:360px;height:58svh}
+  .bridal-editorial-side{grid-template-columns:1fr}
+  .bridal-editorial-side img{height:310px}
+  .portfolio-grid{grid-template-columns:1fr}
+  .portfolio-item,.portfolio-item:nth-child(3n+1){grid-column:auto;min-height:390px}
+  .contact-details h2{font-size:43px}
+  .contact-rule a{font-size:22px}
+  .contact-photo-band{min-height:360px;height:58svh}
+  .contact-photo-band>div{left:16px;right:16px;gap:12px}
+  .contact-photo-band strong{font-size:19px;text-align:right}
+  .enquiry-form{padding:24px 16px}
+  .interest-pills button{font-size:9px;padding:10px 11px}
+  .academy-hero-stack{min-height:360px;height:55svh}
+  .review-score{grid-template-columns:1fr;gap:14px}
+  .review-score>span{font-size:82px}
+  .reviews-hero{padding-left:16px;padding-right:16px}
+  .faq-answer>p{margin-left:40px;margin-right:0}
+  .student-editorial{grid-template-columns:1fr}
+  .student-editorial>div:first-child,.student-editorial>div:nth-child(2){height:54svh;min-height:350px}
+}
+
+@media (min-width:420px) and (max-width:639px){
+  .hero{padding-left:22px;padding-right:22px}
+  .hero h1{font-size:clamp(58px,15vw,72px)}
+  .section,.inner-section{padding-left:22px;padding-right:22px}
+  .page-hero{padding-left:22px;padding-right:22px}
+  .drag-gallery{margin-right:-22px;padding-right:22px}
+  .gallery-card{min-width:76vw}
+}
+
+@media (min-width:640px) and (max-width:899px){
+  .site-header{padding-left:28px;padding-right:28px}
+  .hero{padding:76px 5vw 58px}
+  .hero h1{font-size:clamp(72px,11vw,92px)}
+  .hero-copy{font-size:14px}
+  .hero-visual{height:58svh;min-height:440px}
+  .hero-frame-one{width:58%;left:8%}
+  .hero-frame-two{width:35%;right:5%}
+  .section,.inner-section,.content-section{padding-left:5vw;padding-right:5vw}
+  .section{padding-top:96px;padding-bottom:96px}
+  .split-heading h2,.section-top h2,.dark-section h2,.faq-preview h2{font-size:clamp(62px,9vw,82px)}
+  .editorial-grid{grid-template-columns:1.15fr .85fr;gap:14px}
+  .editorial-card.tall{min-height:560px}
+  .editorial-note{grid-column:1/-1;max-width:440px}
+  .course-row{grid-template-columns:42px 1fr 34px}
+  .course-row h3{font-size:37px}
+  .course-row p{font-size:12px}
+  .feature-grid{grid-template-columns:repeat(2,1fr)}
+  .gallery-card{min-width:48vw;height:500px}
+  .bridal-band{padding:24px}
+  .bridal-band-art{height:68svh}
+  .bridal-band-copy{padding:64px 10px 42px}
+  .page-hero{padding:105px 5vw 82px}
+  .page-hero h1{font-size:clamp(68px,10vw,92px)}
+  .content-grid{grid-template-columns:repeat(2,1fr)}
+  .program-panel{grid-template-columns:1fr 1fr;gap:5vw;align-items:center}
+  .program-panel:nth-child(even) .program-image{order:2}
+  .program-image{height:62svh;min-height:500px}
+  .program-copy h2{font-size:56px}
+  .course-detail-hero,.about-hero,.academy-hero,.student-hero{
+    padding:92px 5vw;
+  }
+  .course-detail-copy h1,.about-hero-copy h1,.academy-hero-copy h1,.student-hero-copy h1,.reviews-hero h1{
+    font-size:clamp(68px,9.5vw,88px);
+  }
+  .course-detail-image,.about-hero-image,.student-hero-image{height:68svh;min-height:520px}
+  .course-detail-body{padding:96px 5vw}
+  .course-info-band{margin-left:5vw;margin-right:5vw}
+  .bridal-page-copy{padding-left:5vw;padding-right:5vw}
+  .bridal-services,.about-principles,.review-types{margin-left:5vw;margin-right:5vw}
+  .bridal-editorial,.about-image-pair,.student-editorial{padding-left:5vw;padding-right:5vw}
+  .portfolio-grid{grid-template-columns:repeat(2,1fr)}
+  .portfolio-item,.portfolio-item:nth-child(3n+1){grid-column:auto;min-height:360px}
+  .portfolio-item:nth-child(3n+1){grid-column:1/-1}
+  .contact-layout{grid-template-columns:1fr 1fr;gap:5vw}
+  .enquiry-form{padding:34px}
+  .academy-method,.student-progress,.about-story{gap:48px}
+  .academy-hero-stack{height:66svh;min-height:500px}
+  .reviews-status{grid-template-columns:1fr 1fr;gap:5vw}
+  .faq-page-layout{grid-template-columns:.8fr 1.2fr;gap:5vw}
+}
+
+@media (min-width:900px) and (max-width:1099px){
+  .desktop-nav,.header-cta{display:none}
+  .menu-toggle{display:grid;margin-left:auto}
+  .mobile-menu-index{display:block}
+  .mobile-menu{padding-top:105px}
+}
+
+@media (min-width:1100px){
+  .desktop-nav{display:flex}
+  .header-cta{display:inline-flex}
+  .menu-toggle{display:none}
+}
+
+@media (min-width:1600px){
+  .site-header{padding-left:5vw;padding-right:5vw}
+  .hero{padding-left:7vw;padding-right:7vw}
+  .section,.inner-section,.content-section{padding-left:8vw;padding-right:8vw}
+  .bridal-services,.about-principles,.review-types,.course-info-band{margin-left:8vw;margin-right:8vw}
+  .bridal-editorial,.about-image-pair,.student-editorial{padding-left:8vw;padding-right:8vw}
+  .footer{padding-left:8vw;padding-right:8vw}
+  .portfolio-grid{grid-auto-rows:clamp(340px,22vw,430px)}
+}
