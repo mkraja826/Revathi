@@ -1,0 +1,2 @@
+import SimplePage from "@/components/SimplePage";
+export default function Page(){return <SimplePage eyebrow="BRIDAL STUDIO" title="Bridal artistry made personal." copy="A premium bridal experience for weddings, engagements, receptions and special occasions." cards={[{title:"Bridal",copy:"Signature wedding-day makeup and styling."},{title:"Engagement",copy:"Polished looks tailored to the occasion."},{title:"Reception",copy:"Refined evening artistry and styling."}]}/>}
