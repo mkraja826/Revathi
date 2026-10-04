@@ -59,6 +59,18 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
         </div>
       </section>
 
+      <section className="course-join">
+        <div className="course-join-heading">
+          <p className="eyebrow">HOW TO JOIN</p>
+          <h2>Three simple steps.</h2>
+        </div>
+        <div className="course-join-grid">
+          <article><span>01</span><h3>Enquire</h3><p>Tell the academy which course you are interested in and your current experience level.</p></article>
+          <article><span>02</span><h3>Confirm</h3><p>Get the current syllabus, fees, duration and available batch information directly.</p></article>
+          <article><span>03</span><h3>Decide</h3><p>Choose the batch only after the current details are clear and suitable for you.</p></article>
+        </div>
+      </section>
+
       <section className="inner-cta">
         <div><p className="eyebrow eyebrow-light">READY TO ASK?</p><h2>Get the current batch details directly.</h2></div>
         <a className="button button-light" href={"https://wa.me/917095657382?text=" + message} target="_blank" rel="noreferrer">WhatsApp academy</a>
