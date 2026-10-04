@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <main className="bridal-page">
       <section className="bridal-page-hero">
-        <img src="https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1800&q=84" alt="Bridal makeup reference" />
+        <img src="https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1800&q=84" alt="Bridal makeup look" />
         <div className="bridal-page-overlay" />
         <div className="bridal-page-copy">
           <p className="eyebrow eyebrow-light">REVATHI BLUSH / BRIDAL STUDIO</p>
@@ -34,7 +34,7 @@ export default function Page() {
           <h2>The look starts with the person,<br />not a preset.</h2>
         </Reveal>
         <Reveal delay={100}>
-          <p className="bridal-intro-copy">The final service details will be tailored to Revathi Blush&apos;s real bridal offering. For now, the site keeps the presentation simple: discuss the event, understand the look, confirm availability, then plan the finish.</p>
+          <p className="bridal-intro-copy">Every booking begins with the event, the outfit and the kind of finish you feel comfortable wearing. From there, the look can be planned around the person rather than a preset.</p>
         </Reveal>
       </section>
 
@@ -52,10 +52,10 @@ export default function Page() {
 
       <section className="bridal-editorial">
         <div className="bridal-editorial-main" data-cursor="VIEW">
-          <img src="https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1600&q=82" alt="Bridal styling detail reference" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1600&q=82" alt="Bridal styling detail" loading="lazy" />
         </div>
         <div className="bridal-editorial-side">
-          <img src="https://images.unsplash.com/photo-1781187009755-0cbc0c4cd2b3?auto=format&fit=crop&w=1200&q=82" alt="Bridal portrait reference" loading="lazy" />
+          <img src="https://images.unsplash.com/photo-1781187009755-0cbc0c4cd2b3?auto=format&fit=crop&w=1200&q=82" alt="Bridal portrait" loading="lazy" />
           <p><span>BRIDAL NOTE</span> Share your event date, venue area and the kind of look you have in mind when enquiring.</p>
         </div>
       </section>
