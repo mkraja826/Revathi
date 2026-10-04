@@ -24,7 +24,7 @@ export default function Page() {
           <p>The academy experience is not only about the final look. It is about becoming more certain with every repetition.</p>
         </div>
         <div className="student-hero-image">
-          <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1600&q=82" alt="Makeup training reference" />
+          <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1600&q=82" alt="Makeup training session" />
           <span>ACADEMY / PRACTICE</span>
         </div>
       </section>
@@ -48,11 +48,11 @@ export default function Page() {
       </section>
 
       <section className="student-editorial">
-        <div><img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1400&q=82" alt="Makeup practice reference" loading="lazy" /></div>
-        <div><img src="https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1400&q=82" alt="Makeup technique reference" loading="lazy" /></div>
+        <div><img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1400&q=82" alt="Makeup practice session" loading="lazy" /></div>
+        <div><img src="https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1400&q=82" alt="Makeup technique detail" loading="lazy" /></div>
         <div className="student-editorial-note">
           <p className="eyebrow">STUDENT WORK</p>
-          <h2>Real student portfolios can replace these references as the gallery grows.</h2>
+          <h2>Practice. Refine. Present the work with confidence.</h2>
           <Link className="text-link" href="/gallery">View gallery →</Link>
         </div>
       </section>
