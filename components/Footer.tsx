@@ -14,7 +14,7 @@ export default function Footer() {
         <div><span>Explore</span><Link href="/academy">Academy</Link><Link href="/courses">Courses</Link><Link href="/bridal-studio">Bridal Studio</Link><Link href="/gallery">Gallery</Link></div>
         <div><span>Connect</span><Link href="/about">About Revathi</Link><Link href="/testimonials">Testimonials</Link><Link href="/faq">FAQ</Link><Link href="/contact">Contact</Link></div>
       </div>
-      <div className="footer-bottom"><span>© {new Date().getFullYear()} Revathi Blush Studio & Academy</span><span>Designed mobile-first · Hyderabad</span></div>
+      <div className="footer-bottom"><span>© {new Date().getFullYear()} Revathi Blush Studio & Academy</span><span>LB Nagar · Hyderabad</span></div>
     </footer>
   );
 }
