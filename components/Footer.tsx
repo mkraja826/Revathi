@@ -10,7 +10,11 @@ export default function Footer() {
         <a className="button button-outline-light" href="tel:+917095657382">Call Academy</a>
       </div>
       <div className="footer-grid">
-        <div><strong>Revathi Blush</strong><p>Professional Makeup Academy & Bridal Studio<br />Shivapuri Colony, LB Nagar, Hyderabad.</p></div>
+        <div>
+          <strong>Revathi Blush</strong>
+          <p>Professional Makeup Academy & Bridal Studio<br />Shivapuri Colony, LB Nagar, Hyderabad.</p>
+          <a className="footer-phone" href="tel:+917095657382">+91 70956 57382</a>
+        </div>
         <div><span>Explore</span><Link href="/academy">Academy</Link><Link href="/courses">Courses</Link><Link href="/bridal-studio">Bridal Studio</Link><Link href="/gallery">Gallery</Link></div>
         <div><span>Connect</span><Link href="/about">About Revathi</Link><Link href="/testimonials">Testimonials</Link><Link href="/faq">FAQ</Link><Link href="/contact">Contact</Link></div>
       </div>
