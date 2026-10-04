@@ -9,6 +9,15 @@ const courses = [
   { title: "Masterclasses", copy: "Short-format sessions for artists sharpening a specific part of their work.", href: "/courses/masterclasses", number: "05" },
 ];
 
+const temporaryImages = {
+  bridalHero: "https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1600&q=82",
+  bridalSecond: "https://images.unsplash.com/photo-1781187009755-0cbc0c4cd2b3?auto=format&fit=crop&w=1200&q=82",
+  studioPractice: "https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1400&q=82",
+  academyPractice: "https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82",
+  bridalDetail: "https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1600&q=82",
+  makeupSession: "https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1400&q=82",
+};
+
 const standards = [
   ["01", "Technique before trends", "Good work should hold up after the reel ends."],
   ["02", "Practice that shows", "Learning should be visible in the hand, not just in notes."],
@@ -37,11 +46,11 @@ export default function Home() {
 
         <div className="hero-visual art-directed-hero" data-cursor="VIEW">
           <div className="hero-frame hero-frame-one">
-            <div className="placeholder-photo bridal-one"><span>BRIDAL<br />ARTISTRY</span></div>
+            <img className="site-photo" src={temporaryImages.bridalHero} alt="Bridal makeup reference" />
             <small>01 / BRIDAL</small>
           </div>
           <div className="hero-frame hero-frame-two">
-            <div className="placeholder-photo bridal-two"><span>ACADEMY<br />TRAINING</span></div>
+            <img className="site-photo" src={temporaryImages.makeupSession} alt="Makeup artist at work" />
             <small>02 / ACADEMY</small>
           </div>
           <div className="hero-caption">A studio practice.<br />A place to learn the craft.</div>
@@ -66,11 +75,11 @@ export default function Home() {
 
         <div className="editorial-grid editorial-grid-human">
           <Reveal className="editorial-card tall">
-            <div className="placeholder-photo portrait"><span>REVATHI<br />PORTRAIT</span></div>
+            <img className="site-photo" src={temporaryImages.studioPractice} alt="Makeup artistry reference" />
             <small>THE ARTIST</small>
           </Reveal>
           <Reveal delay={120} className="editorial-card academy-shot">
-            <div className="placeholder-photo classroom"><span>ACADEMY<br />IN SESSION</span></div>
+            <img className="site-photo" src={temporaryImages.academyPractice} alt="Makeup training reference" />
             <small>THE ACADEMY</small>
           </Reveal>
           <Reveal delay={220} className="editorial-note">
@@ -126,8 +135,14 @@ export default function Home() {
           <Link href="/student-stories" className="text-link">Student work →</Link>
         </div>
         <div className="drag-gallery" data-cursor="DRAG">
-          {["CLASSROOM","PRACTICE","PORTFOLIO","CERTIFICATION"].map((label, i) => (
+          {[
+            ["CLASSROOM", temporaryImages.academyPractice],
+            ["PRACTICE", temporaryImages.makeupSession],
+            ["PORTFOLIO", temporaryImages.bridalSecond],
+            ["BRIDAL DETAIL", temporaryImages.bridalDetail],
+          ].map(([label, image], i) => (
             <div className={"gallery-card gallery-card-" + (i+1)} key={label}>
+              <img className="site-photo" src={image} alt={label + " reference"} loading="lazy" />
               <span>{String(i+1).padStart(2,"0")}</span><strong>{label}</strong>
             </div>
           ))}
@@ -136,7 +151,7 @@ export default function Home() {
 
       <section className="bridal-band human-bridal">
         <div className="bridal-band-art">
-          <div className="placeholder-photo bridal-large"><span>BRIDAL<br />PORTFOLIO</span></div>
+          <img className="site-photo" src={temporaryImages.bridalDetail} alt="Indian bridal makeup reference" loading="lazy" />
           <small>BRIDAL / REVATHI BLUSH</small>
         </div>
         <div className="bridal-band-copy">
