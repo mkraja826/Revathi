@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const links = [
@@ -14,8 +15,12 @@ const links = [
 ];
 
 export default function Header() {
+  const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/");
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -25,8 +30,19 @@ export default function Header() {
   }, []);
 
   useEffect(() => {
+    setOpen(false);
+  }, [pathname]);
+
+  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
-    return () => { document.body.style.overflow = ""; };
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", onKey);
+    };
   }, [open]);
 
   return (
@@ -37,22 +53,45 @@ export default function Header() {
           <span className="brand-mark">RB</span>
           <span><strong>REVATHI BLUSH</strong><small>STUDIO & ACADEMY</small></span>
         </Link>
+
         <nav className="desktop-nav" aria-label="Primary navigation">
-          {links.map(([label, href]) => <Link key={href} href={href}>{label}</Link>)}
+          {links.map(([label, href]) => (
+            <Link key={href} href={href} className={isActive(href) ? "is-active" : ""} aria-current={isActive(href) ? "page" : undefined}>
+              {label}
+            </Link>
+          ))}
         </nav>
-        <Link className="header-cta" href="https://wa.me/917095657382" target="_blank">Enquire</Link>
-        <button className={"menu-toggle " + (open ? "is-open" : "")} onClick={() => setOpen(!open)} aria-label="Toggle menu" aria-expanded={open}>
+
+        <a className="header-cta" href="https://wa.me/917095657382" target="_blank" rel="noreferrer">Enquire</a>
+
+        <button
+          className={"menu-toggle " + (open ? "is-open" : "")}
+          onClick={() => setOpen(!open)}
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
+        >
           <span /><span />
         </button>
       </header>
-      <div className={"mobile-menu " + (open ? "is-open" : "")} aria-hidden={!open}>
-        <nav>
+
+      <div id="mobile-navigation" className={"mobile-menu " + (open ? "is-open" : "")} aria-hidden={!open}>
+        <div className="mobile-menu-index">MENU · REVATHI BLUSH</div>
+        <nav aria-label="Mobile navigation">
           {links.map(([label, href], index) => (
-            <Link key={href} href={href} onClick={() => setOpen(false)} style={{ transitionDelay: (index * 45) + "ms" }}>{label}</Link>
+            <Link
+              key={href}
+              href={href}
+              className={isActive(href) ? "is-active" : ""}
+              aria-current={isActive(href) ? "page" : undefined}
+              style={{ transitionDelay: (index * 45) + "ms" }}
+            >
+              <span>0{index + 1}</span>{label}
+            </Link>
           ))}
         </nav>
         <div className="mobile-menu-footer">
-          <p>Professional makeup education & bridal artistry.</p>
+          <p>Professional makeup education & bridal artistry in LB Nagar, Hyderabad.</p>
           <a href="https://wa.me/917095657382" target="_blank" rel="noreferrer" className="button button-light">WhatsApp the Academy</a>
         </div>
       </div>
