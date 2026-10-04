@@ -377,3 +377,42 @@
   .faq-accordion button strong{font-size:32px}
   .faq-answer>p{font-size:11px;margin-left:60px;max-width:650px}
 }
+
+
+/* Student journey page */
+.student-hero{display:grid;gap:34px;padding:76px 20px;background:var(--ivory)}
+.student-hero-copy h1{font:500 58px/.88 var(--serif);letter-spacing:-.045em;margin:0}
+.student-hero-copy h1 em{font-weight:500;color:var(--burgundy)}
+.student-hero-copy>p:not(.eyebrow){font-size:12px;line-height:1.85;color:var(--muted);max-width:520px;margin:25px 0 0}
+.student-hero-image{height:62vh;min-height:440px;position:relative;overflow:hidden}
+.student-hero-image img{width:100%;height:100%;object-fit:cover}
+.student-hero-image>span{position:absolute;right:0;bottom:0;background:var(--ivory);padding:9px 11px;font-size:7px;letter-spacing:.16em}
+.student-progress{display:grid;gap:54px}
+.student-progress h2{font:500 47px/.94 var(--serif);letter-spacing:-.035em;margin:0}
+.student-stage-list{border-top:1px solid var(--line)}
+.student-stage-list article{display:grid;grid-template-columns:36px 1fr;gap:8px;padding:23px 0;border-bottom:1px solid var(--line)}
+.student-stage-list span{font-size:8px;color:var(--muted)}
+.student-stage-list h3{font:500 30px/1 var(--serif);margin:0}
+.student-stage-list p{grid-column:2;margin:4px 0 0;font-size:10px;line-height:1.7;color:var(--muted);max-width:500px}
+.student-editorial{padding:80px 20px;background:var(--paper);display:grid;grid-template-columns:1.1fr .9fr;gap:10px;align-items:end}
+.student-editorial>div:first-child{height:56vh;min-height:420px}
+.student-editorial>div:nth-child(2){height:38vh;min-height:270px}
+.student-editorial img{width:100%;height:100%;object-fit:cover}
+.student-editorial-note{grid-column:1/-1;padding-top:20px}
+.student-editorial-note h2{font:500 36px/.98 var(--serif);letter-spacing:-.03em;margin:0 0 20px;max-width:620px}
+@media (min-width:900px){
+  .student-hero{grid-template-columns:.9fr 1.1fr;align-items:center;min-height:calc(100vh - 114px);padding:6vw}
+  .student-hero-copy h1{font-size:clamp(82px,6.8vw,126px)}
+  .student-hero-copy>p:not(.eyebrow){font-size:13px}
+  .student-hero-image{height:76vh}
+  .student-progress{grid-template-columns:.9fr 1.1fr;gap:9vw}
+  .student-progress h2{font-size:72px}
+  .student-stage-list article{grid-template-columns:56px .7fr 1fr;align-items:center;padding:29px 0}
+  .student-stage-list h3{font-size:43px}
+  .student-stage-list p{grid-column:auto;margin:0;font-size:11px}
+  .student-editorial{padding:120px 6vw;grid-template-columns:1.15fr .65fr .7fr;gap:18px;align-items:end}
+  .student-editorial>div:first-child{height:76vh}
+  .student-editorial>div:nth-child(2){height:50vh}
+  .student-editorial-note{grid-column:auto;padding:0 0 18px}
+  .student-editorial-note h2{font-size:46px}
+}
