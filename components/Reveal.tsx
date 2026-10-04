@@ -9,6 +9,10 @@ export default function Reveal({ children, delay = 0, className = "" }: { childr
   useEffect(() => {
     const node = ref.current;
     if (!node) return;
+    if (!("IntersectionObserver" in window)) {
+      setShow(true);
+      return;
+    }
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
         setShow(true);
