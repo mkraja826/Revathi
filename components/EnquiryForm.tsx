@@ -39,7 +39,15 @@ export default function EnquiryForm() {
 
       <label>
         <span>Phone number</span>
-        <input name="phone" required inputMode="tel" autoComplete="tel" placeholder="+91" />
+        <input
+          name="phone"
+          required
+          inputMode="tel"
+          autoComplete="tel"
+          pattern="[0-9+() -]{7,20}"
+          title="Enter a valid phone number"
+          placeholder="+91"
+        />
       </label>
 
       <fieldset>
