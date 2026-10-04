@@ -25,6 +25,7 @@ export default function Page() {
         eyebrow="PORTFOLIO"
         title="A closer look at the aesthetic."
         copy="Bridal beauty, academy practice and finishing details that reflect the visual direction of Revathi Blush."
+        hideGallery
       />
       <section className="inner-section gallery-page-section">
         <GalleryGrid items={items} />
