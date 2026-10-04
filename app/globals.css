@@ -665,3 +665,73 @@ main{min-width:0}
   .footer{padding-left:8vw;padding-right:8vw}
   .portfolio-grid{grid-auto-rows:clamp(340px,22vw,430px)}
 }
+
+
+/* Final visual polish */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+.page-hero-art{
+  position:absolute;
+  right:18px;
+  bottom:20px;
+  display:flex;
+  align-items:flex-end;
+  gap:8px;
+  opacity:.16;
+  pointer-events:none;
+}
+.page-hero-art span,
+.page-hero-art span:first-child,
+.page-hero-art span:last-child{
+  position:static;
+  width:auto;
+  height:auto;
+  border:0;
+  border-radius:0;
+  font:500 84px/.72 var(--serif);
+  letter-spacing:-.06em;
+  color:var(--burgundy);
+}
+.page-hero-art i{width:28px;height:1px;background:var(--burgundy);margin-bottom:6px}
+.page-hero-art small{display:none;font-size:7px;letter-spacing:.17em;color:var(--burgundy);margin-bottom:2px}
+.course-detail-note{
+  margin:22px 0 26px;
+  padding:14px 0;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+  color:var(--muted);
+  font-size:10px;
+  line-height:1.65;
+}
+.course-focus-row-info{grid-template-columns:34px minmax(0,1fr)}
+.course-focus-row-info p{
+  grid-column:2;
+  margin:6px 0 0;
+  font-size:10px;
+  line-height:1.6;
+  color:var(--muted);
+}
+.review-score-textual{
+  grid-template-columns:1fr;
+  align-items:start;
+}
+.review-score-textual>span{
+  font:600 12px/1 var(--sans);
+  letter-spacing:.2em;
+  color:var(--burgundy);
+}
+.review-score-textual strong{font-size:32px}
+.review-score-textual .text-link{margin-top:18px}
+
+@media (min-width:900px){
+  .page-hero-art{right:6vw;bottom:64px;gap:14px}
+  .page-hero-art span,
+  .page-hero-art span:first-child,
+  .page-hero-art span:last-child{font-size:170px}
+  .page-hero-art i{width:50px;margin-bottom:10px}
+  .page-hero-art small{display:block;margin-bottom:7px}
+  .course-focus-row-info{grid-template-columns:60px .9fr 1fr}
+  .course-focus-row-info p{grid-column:auto;margin:0;font-size:11px}
+  .review-score-textual{grid-template-columns:.35fr 1fr}
+  .review-score-textual>span{font-size:14px;padding-top:7px}
+  .review-score-textual strong{font-size:42px}
+}
