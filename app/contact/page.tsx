@@ -1,0 +1,2 @@
+import SimplePage from "@/components/SimplePage";
+export default function Page(){return <SimplePage eyebrow="CONTACT / ADMISSIONS" title="Visit. Enquire. Begin." copy="Revathi Blush Studio & Academy · Shivapuri Colony, LB Nagar, Hyderabad · +91 70956 57382." cards={[{title:"WhatsApp",copy:"Fastest way to enquire about courses, batches and bridal services."},{title:"Call",copy:"Speak directly with the academy at +91 70956 57382."},{title:"Visit",copy:"Shivapuri Colony, LB Nagar, Hyderabad 500074."}]}/>}
