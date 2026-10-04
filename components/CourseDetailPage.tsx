@@ -26,7 +26,7 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
             <Link className="button button-ghost" href="/courses">All courses</Link>
           </div>
         </div>
-        <div className="course-detail-image" data-cursor="VIEW">
+        <div className="course-detail-image">
           <img src={image} alt={imageAlt} fetchPriority="high" />
           <span>REVATHI BLUSH / ACADEMY</span>
         </div>
@@ -57,13 +57,6 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
             </Reveal>
           ))}
         </div>
-      </section>
-
-      <section className="course-info-band">
-        <div><span>BATCH</span><strong>Ask academy</strong></div>
-        <div><span>DURATION</span><strong>Shared on enquiry</strong></div>
-        <div><span>FEES</span><strong>Shared on enquiry</strong></div>
-        <div><span>LOCATION</span><strong>LB Nagar, Hyderabad</strong></div>
       </section>
 
       <section className="inner-cta">
