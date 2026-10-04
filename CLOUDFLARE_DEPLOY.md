@@ -1,31 +1,31 @@
-# Cloudflare Pages Deployment
+# Cloudflare Deployment
 
-This site is configured as a static Next.js export. It does not need a Worker runtime, database, or server functions.
+Revathi Blush is a static Next.js export deployed to the existing Cloudflare Worker project **revathi** using Cloudflare Static Assets.
 
-## Cloudflare dashboard
+## Cloudflare build settings
 
-1. Open **Workers & Pages**.
-2. Choose **Create application** -> **Pages**.
-3. Choose **Import an existing Git repository**.
-4. Select **mkraja826/Revathi**.
-5. Use these settings:
-
-- Framework preset: **Next.js (Static HTML Export)**
-- Production branch: **main**
-- Build command: `npx next build`
-- Build output directory: `out`
+- Production branch: `main`
+- Build command: `npm run build`
+- Deploy command: `npx wrangler deploy`
 - Root directory: repository root
 
-6. Deploy.
+Do not use OpenNext for this site. There are no server actions, API routes, authentication flows, or runtime-rendered pages.
 
-Cloudflare will rebuild automatically whenever `main` changes.
+## How deployment works
 
-## Before custom domain launch
+`next build` creates the static website in:
 
-After the final domain is chosen:
-- add the custom domain in Cloudflare Pages;
-- update any final brand assets and approved business details;
-- add the production domain to global metadata/canonical and sitemap in a final SEO pass.
+```
+out/
+```
+
+The committed `wrangler.jsonc` tells Wrangler to upload `./out` as the Worker's static assets.
+
+It also configures:
+
+- custom `404.html` handling
+- forced trailing slashes to match the Next.js export
+- no Worker script / no OpenNext runtime
 
 ## Local verification
 
@@ -33,6 +33,13 @@ After the final domain is chosen:
 npm install
 npm run qa
 npm run build
+npm run preview
 ```
 
-The exported site will be in `out/`.
+To deploy manually:
+
+```bash
+npm run deploy
+```
+
+Cloudflare's Git integration can keep running the build and deploy commands automatically whenever `main` changes.
