@@ -12,7 +12,11 @@ export default function PageHero({ eyebrow, title, copy }: { eyebrow: string; ti
           <Link href="/gallery" className="text-link">View our work →</Link>
         </div>
       </div>
-      <div className="page-hero-art" aria-hidden="true"><span /><span /></div>
+      <div className="page-hero-art" aria-hidden="true">
+        <span>RB</span>
+        <i />
+        <small>STUDIO &amp; ACADEMY</small>
+      </div>
     </section>
   );
 }
