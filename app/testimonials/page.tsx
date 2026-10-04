@@ -4,7 +4,7 @@ import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   title: "Reviews & Student Stories",
-  description: "Explore verified feedback and student-story updates from Revathi Blush Studio & Academy in LB Nagar, Hyderabad.",
+  description: "Explore public feedback and student stories from Revathi Blush Studio & Academy in LB Nagar, Hyderabad.",
 };
 
 export default function Page() {
@@ -12,22 +12,27 @@ export default function Page() {
     <main>
       <section className="reviews-hero">
         <p className="eyebrow">REVIEWS / STORIES</p>
-        <h1>Real feedback<br /><em>only.</em></h1>
-        <p>We would rather show fewer genuine experiences than fill the page with stock testimonials.</p>
+        <h1>Experiences that<br /><em>speak for themselves.</em></h1>
+        <p>For current public feedback, visit the Revathi Blush Google profile or explore the student journey through the academy.</p>
       </section>
 
       <section className="inner-section reviews-status">
         <Reveal>
-          <div className="review-score">
-            <span>5.0</span>
-            <div><strong>Google rating</strong><p>Current public profile rating. Review content will be added only when verified.</p></div>
+          <div className="review-score review-score-textual">
+            <span>REVIEWS</span>
+            <div>
+              <strong>See current Google feedback</strong>
+              <p>Public ratings and review details can change over time, so the latest feedback is best viewed directly on Google.</p>
+              <a className="text-link" href="https://www.google.com/maps/search/?api=1&query=Revathi%20Blush%20Studio%20%26%20Academy%20LB%20Nagar%20Hyderabad" target="_blank" rel="noreferrer">Open Google profile →</a>
+            </div>
           </div>
         </Reveal>
+
         <Reveal delay={100}>
           <div className="reviews-copy">
-            <p className="eyebrow">WHAT WILL LIVE HERE</p>
-            <h2>Student journeys with context.</h2>
-            <p>As verified feedback is collected, this page will pair each review with the relevant course or bridal service instead of showing anonymous quotes.</p>
+            <p className="eyebrow">STUDENT JOURNEY</p>
+            <h2>Progress is part of the story.</h2>
+            <p>Explore how the academy experience moves from learning and practice toward stronger technique, presentation and confidence.</p>
             <Link href="/student-stories" className="text-link">Student stories →</Link>
           </div>
         </Reveal>
@@ -35,9 +40,9 @@ export default function Page() {
 
       <section className="review-types">
         {[
-          ["01","Academy experience","What students found useful in the learning process."],
-          ["02","Skill progress","How practice changed confidence and consistency."],
-          ["03","Bridal clients","Feedback tied to real service experiences."],
+          ["01","Academy experience","Learning, practice and the classroom experience."],
+          ["02","Skill progress","How confidence and consistency build over time."],
+          ["03","Bridal clients","Feedback connected to real service experiences."],
         ].map(([n,title,copy], i) => (
           <Reveal key={title} delay={i*60}>
             <article><span>{n}</span><h3>{title}</h3><p>{copy}</p></article>
