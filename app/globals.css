@@ -28,3 +28,62 @@
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.22,1,.36,1)}.reveal.is-visible{opacity:1;transform:none}.custom-cursor{display:none}
 @media (min-width: 900px){body{cursor:none}.custom-cursor{position:fixed;left:0;top:0;width:18px;height:18px;border-radius:50%;border:1px solid var(--burgundy);pointer-events:none;z-index:9999;display:grid;place-items:center;margin-left:-9px;margin-top:-9px;opacity:0;transition:width .25s,height .25s,margin .25s,background .25s,color .25s,opacity .2s}.custom-cursor.is-visible{opacity:1}.custom-cursor--active{width:76px;height:76px;margin-left:-38px;margin-top:-38px;background:var(--burgundy);color:#fff;border-color:var(--burgundy)}.custom-cursor span{font-size:8px;font-weight:700;letter-spacing:.12em}.site-header{height:84px;padding:0 42px}.desktop-nav{display:flex;gap:24px;margin-left:auto;margin-right:28px}.desktop-nav a{font-size:10px;font-weight:600;position:relative}.desktop-nav a::after{content:"";position:absolute;left:0;right:100%;bottom:-7px;height:1px;background:var(--burgundy);transition:.3s}.desktop-nav a:hover::after{right:0}.header-cta{display:inline-flex;border:1px solid var(--burgundy);border-radius:999px;height:40px;padding:0 18px;align-items:center;font-size:10px;font-weight:700}.menu-toggle{display:none}.hero{min-height:calc(100vh - 114px);padding:8vh 5vw 5vh;display:grid;grid-template-columns:54% 46%;align-items:center}.hero h1{font-size:clamp(82px,7.9vw,138px)}.hero-copy{font-size:14px;margin:32px 0}.hero-note{display:flex;align-items:center;gap:14px;position:absolute;bottom:18px;font-size:8px;letter-spacing:.16em;text-transform:uppercase}.hero-note i{width:42px;height:1px;background:var(--ink)}.hero-visual{height:75vh;margin:0}.hero-frame-one{left:8%;width:55%;height:82%}.hero-frame-two{right:6%;width:37%;height:57%}.section{padding:120px 6vw}.split-heading{display:grid;grid-template-columns:62% 38%;align-items:end}.split-heading h2,.section-top h2,.dark-section h2,.faq-preview h2{font-size:clamp(72px,6.4vw,118px)}.intro-copy{margin:0 0 10px}.editorial-grid{grid-template-columns:1.2fr .9fr .7fr;gap:16px;margin-top:80px}.editorial-card.tall{grid-row:auto;min-height:600px}.editorial-card{min-height:420px}.editorial-quote{grid-column:auto;align-items:center;padding:20px}.editorial-quote blockquote{font-size:42px}.section-top{flex-direction:row;justify-content:space-between;align-items:end}.course-row{grid-template-columns:50px 1.1fr 1fr 40px;padding:30px 8px}.course-row h3{font-size:42px}.course-row p{grid-column:auto;font-size:12px}.course-arrow{grid-column:auto;grid-row:auto}.course-row:hover{background:rgba(91,23,40,.04);padding-left:18px;padding-right:18px}.feature-grid{grid-template-columns:repeat(4,1fr)}.feature-grid article{min-height:320px;padding:30px}.feature-grid h3{font-size:35px;margin-top:130px}.drag-gallery{overflow:hidden}.gallery-card{min-width:24%;height:560px;transition:transform .5s}.gallery-card:hover{transform:translateY(-12px)}.bridal-band{display:grid;grid-template-columns:55% 45%;padding:26px;min-height:90vh}.bridal-band-art{height:auto}.bridal-band-copy{padding:8vw 5vw;display:flex;flex-direction:column;justify-content:center}.bridal-band-copy h2{font-size:clamp(72px,6vw,112px)}.testimonial-section blockquote{font-size:clamp(60px,5.4vw,100px)}.faq-preview{grid-template-columns:46% 54%;padding-top:120px;padding-bottom:120px}.cta-section{padding:110px 6vw}.cta-section h2,.footer h2{font-size:clamp(75px,6.2vw,115px)}.footer{padding:100px 6vw 30px}.footer-grid{grid-template-columns:2fr 1fr 1fr}.footer-grid>div:first-child{grid-column:auto}.page-hero{padding:130px 6vw 100px}.page-hero h1{font-size:clamp(80px,7vw,132px)}.content-section{padding:100px 6vw}.content-grid{grid-template-columns:repeat(3,1fr)} }
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.001ms!important;animation-iteration-count:1!important;transition-duration:.001ms!important}.custom-cursor{display:none!important}body{cursor:auto}}
+
+
+/* Human art-direction pass */
+.button{border-radius:3px;min-height:48px;padding:0 20px;text-transform:none;letter-spacing:.025em}
+.header-cta{border-radius:3px}
+.human-hero{background:var(--ivory)}
+.human-hero::before{content:"";position:absolute;inset:auto 0 0;height:1px;background:var(--line)}
+.hero-signoff{display:flex;align-items:center;gap:10px;margin-top:34px;font-size:8px;letter-spacing:.18em;color:var(--muted)}
+.hero-signoff i{width:34px;height:1px;background:var(--rose)}
+.art-directed-hero .hero-frame{box-shadow:none;border:1px solid rgba(36,28,29,.08)}
+.art-directed-hero .hero-frame-one{border-radius:0;transform:none}
+.art-directed-hero .hero-frame-two{border-radius:0;transform:none}
+.art-directed-hero .hero-frame small,.human-bridal small{position:absolute;z-index:4;font-size:7px;letter-spacing:.18em;background:var(--ivory);color:var(--ink);padding:7px 9px}
+.art-directed-hero .hero-frame-one small{right:0;bottom:0}
+.art-directed-hero .hero-frame-two small{left:0;top:0}
+.hero-caption{position:absolute;left:0;bottom:0;font:italic 500 18px/1.08 var(--serif);max-width:170px;color:var(--burgundy)}
+.studio-strip{display:flex;align-items:center;justify-content:center;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line);font-size:8px;letter-spacing:.22em;white-space:nowrap;overflow:hidden}
+.studio-strip i{width:3px;height:3px;border-radius:50%;background:var(--gold);flex:0 0 auto}
+.editorial-grid-human{align-items:start}
+.editorial-note{grid-column:2;align-self:end;padding:18px 0 8px;border-top:1px solid var(--line)}
+.editorial-note .hand-note{display:block;font:italic 500 23px/1 var(--serif);color:var(--burgundy);transform:rotate(-3deg);margin-bottom:12px}
+.editorial-note p{font-size:11px;line-height:1.7;color:var(--muted);margin:0}
+.standards-heading{display:grid;gap:28px}
+.standards-lede{max-width:430px;color:#cdbbbd;font-size:12px;line-height:1.8;margin:0}
+.standards-list{margin-top:58px;border-top:1px solid rgba(255,255,255,.17)}
+.standard-row{display:grid;grid-template-columns:38px 1fr;gap:10px;padding:24px 0;border-bottom:1px solid rgba(255,255,255,.17)}
+.standard-row>span{font-size:8px;letter-spacing:.14em;color:#b99b9f}
+.standard-row h3{font:500 28px/1 var(--serif);margin:0}
+.standard-row p{grid-column:2;font-size:10px;line-height:1.65;color:#cdbbbd;margin:2px 0 0;max-width:420px}
+.standard-row-2,.standard-row-4{padding-left:10vw}
+.gallery-disclaimer{margin:14px 0 0;font-size:9px;line-height:1.5;color:var(--muted);max-width:500px}
+.human-bridal .bridal-band-art{position:relative}
+.human-bridal .bridal-band-art small{right:0;bottom:0}
+.proof-section{position:relative;overflow:hidden;border-top:1px solid var(--line)}
+.proof-section .proof-index{font:500 180px/.75 var(--serif);color:rgba(91,23,40,.06);position:absolute;right:-12px;top:34px}
+.proof-section h2{font:500 clamp(45px,12vw,82px)/.92 var(--serif);letter-spacing:-.04em;margin:0;max-width:920px}
+.proof-section p:not(.eyebrow){max-width:620px;font-size:12px;line-height:1.8;color:var(--muted);margin:28px 0 24px}
+.human-cta{display:grid;gap:34px}
+.human-cta .cta-side>p{font-size:11px;line-height:1.7;color:#ddcbcd;max-width:360px;margin:0 0 20px}
+.content-card{border-radius:0;box-shadow:none}
+@media (min-width:900px){
+  .human-hero{grid-template-columns:50% 50%;padding-top:5vh}
+  .hero-caption{font-size:25px;left:-4%;bottom:2%}
+  .art-directed-hero .hero-frame-one{left:16%;top:4%;width:50%;height:84%}
+  .art-directed-hero .hero-frame-two{right:0;bottom:7%;width:31%;height:48%}
+  .studio-strip{justify-content:flex-start;padding-left:6vw;gap:20px}
+  .editorial-grid-human{grid-template-columns:1.35fr .85fr .65fr}
+  .editorial-note{grid-column:auto;padding:34px 0 12px;align-self:center}
+  .editorial-note .hand-note{font-size:34px}
+  .standards-heading{grid-template-columns:1.3fr .7fr;align-items:end}
+  .standards-list{margin-left:16vw}
+  .standard-row{grid-template-columns:58px .9fr 1fr;align-items:center;padding:28px 0}
+  .standard-row p{grid-column:auto;margin:0}
+  .standard-row h3{font-size:42px}
+  .standard-row-2,.standard-row-4{padding-left:8vw}
+  .proof-section{padding-top:145px;padding-bottom:145px}
+  .proof-section .proof-index{font-size:360px;right:-10px;top:10px}
+  .human-cta{grid-template-columns:1.4fr .6fr;align-items:end}
+}
