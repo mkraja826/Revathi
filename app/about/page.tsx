@@ -17,7 +17,7 @@ export default function Page() {
           <p>Makeup should feel polished without losing the person underneath it. Training should feel practical enough to use beyond the classroom.</p>
         </div>
         <div className="about-hero-image" data-cursor="VIEW">
-          <img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1600&q=82" alt="Makeup artist at work" />
+          <img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1600&q=82" alt="Makeup artist at work" fetchPriority="high" />
           <span>REVATHI BLUSH · HYDERABAD</span>
         </div>
       </section>
