@@ -8,14 +8,14 @@ export const metadata: Metadata = {
 };
 
 const items = [
-  { src: "https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1400&q=82", alt: "Bridal makeup reference", label: "Bridal portrait", category: "Bridal" },
-  { src: "https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1400&q=82", alt: "Makeup artist reference", label: "Artist at work", category: "Academy" },
-  { src: "https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1400&q=82", alt: "Bridal detail reference", label: "Finishing detail", category: "Bridal" },
-  { src: "https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82", alt: "Makeup training reference", label: "Practice session", category: "Academy" },
-  { src: "https://images.unsplash.com/photo-1781187009755-0cbc0c4cd2b3?auto=format&fit=crop&w=1400&q=82", alt: "Beauty portrait reference", label: "Occasion look", category: "Portfolio" },
-  { src: "https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1400&q=82", alt: "Makeup session reference", label: "Technique", category: "Academy" },
-  { src: "https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1100&q=76", alt: "Bridal beauty reference", label: "Bridal finish", category: "Portfolio" },
-  { src: "https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1100&q=76", alt: "Bridal styling reference", label: "Detail study", category: "Portfolio" },
+  { src: "https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1400&q=82", alt: "Bridal makeup inspiration", label: "Bridal portrait", category: "Bridal" },
+  { src: "https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1400&q=82", alt: "Makeup artist at work", label: "Artist at work", category: "Academy" },
+  { src: "https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1400&q=82", alt: "Bridal finishing detail", label: "Finishing detail", category: "Bridal" },
+  { src: "https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82", alt: "Makeup training session", label: "Practice session", category: "Academy" },
+  { src: "https://images.unsplash.com/photo-1781187009755-0cbc0c4cd2b3?auto=format&fit=crop&w=1400&q=82", alt: "Beauty portrait", label: "Occasion look", category: "Portfolio" },
+  { src: "https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1400&q=82", alt: "Makeup technique session", label: "Technique", category: "Academy" },
+  { src: "https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1100&q=76", alt: "Bridal beauty look", label: "Bridal finish", category: "Portfolio" },
+  { src: "https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1100&q=76", alt: "Bridal styling detail", label: "Detail study", category: "Portfolio" },
 ];
 
 export default function Page() {
@@ -23,8 +23,8 @@ export default function Page() {
     <main>
       <PageHero
         eyebrow="PORTFOLIO"
-        title="The work should speak before we do."
-        copy="Temporary visual references for now. Revathi Blush bridal work, student practice and academy photography can replace these without changing the gallery system."
+        title="A closer look at the aesthetic."
+        copy="Bridal beauty, academy practice and finishing details that reflect the visual direction of Revathi Blush."
       />
       <section className="inner-section gallery-page-section">
         <GalleryGrid items={items} />
