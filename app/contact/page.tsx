@@ -14,6 +14,7 @@ export default function Page() {
         eyebrow="CONTACT / ADMISSIONS"
         title="Come by. Call. Or send a quick WhatsApp."
         copy="Revathi Blush Studio & Academy · Shivapuri Colony, LB Nagar, Hyderabad 500074."
+        hideEnquire
       />
 
       <section className="inner-section contact-layout">
