@@ -46,7 +46,7 @@ export default function Home() {
 
         <div className="hero-visual art-directed-hero" data-cursor="VIEW">
           <div className="hero-frame hero-frame-one">
-            <img className="site-photo" src={temporaryImages.bridalHero} alt="Bridal makeup reference" />
+            <img className="site-photo" src={temporaryImages.bridalHero} alt="Bridal makeup inspiration" fetchPriority="high" />
             <small>01 / BRIDAL</small>
           </div>
           <div className="hero-frame hero-frame-two">
