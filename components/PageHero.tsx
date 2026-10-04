@@ -1,16 +1,32 @@
 import Link from "next/link";
 
-export default function PageHero({ eyebrow, title, copy }: { eyebrow: string; title: string; copy: string }) {
+export default function PageHero({
+  eyebrow,
+  title,
+  copy,
+  hideEnquire = false,
+  hideGallery = false,
+}: {
+  eyebrow: string;
+  title: string;
+  copy: string;
+  hideEnquire?: boolean;
+  hideGallery?: boolean;
+}) {
+  const showActions = !hideEnquire || !hideGallery;
+
   return (
     <section className="page-hero">
       <div className="page-hero-inner">
         <p className="eyebrow">{eyebrow}</p>
         <h1>{title}</h1>
         <p>{copy}</p>
-        <div className="hero-actions">
-          <Link href="/contact" className="button button-primary">Enquire now</Link>
-          <Link href="/gallery" className="text-link">View our work →</Link>
-        </div>
+        {showActions && (
+          <div className="hero-actions">
+            {!hideEnquire && <Link href="/contact" className="button button-primary">Enquire now</Link>}
+            {!hideGallery && <Link href="/gallery" className="text-link">View our work →</Link>}
+          </div>
+        )}
       </div>
       <div className="page-hero-art" aria-hidden="true">
         <span>RB</span>
