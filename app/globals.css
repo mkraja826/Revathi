@@ -232,3 +232,38 @@
   .contact-photo-band{height:78vh}
   .contact-photo-band>div{left:6vw;right:6vw;bottom:36px}
 }
+
+
+/* Course detail pages */
+.content-index{display:block;font-size:8px;letter-spacing:.16em;color:var(--muted);margin-bottom:26px}
+.course-detail-hero{display:grid;gap:34px;padding:76px 20px;background:var(--ivory)}
+.course-detail-copy h1{font:500 58px/.88 var(--serif);letter-spacing:-.045em;margin:0}
+.course-detail-copy>p:not(.eyebrow){font-size:12px;line-height:1.8;color:var(--muted);max-width:500px;margin:24px 0 28px}
+.course-detail-image{height:58vh;min-height:430px;position:relative;overflow:hidden}
+.course-detail-image img{width:100%;height:100%;object-fit:cover}
+.course-detail-image>span{position:absolute;right:0;bottom:0;background:var(--ivory);padding:9px 11px;font-size:7px;letter-spacing:.16em}
+.course-detail-body{padding:78px 20px;display:grid;gap:72px}
+.course-who h2{font:500 45px/.94 var(--serif);letter-spacing:-.035em;margin:0;max-width:760px}
+.course-focus{border-top:1px solid var(--line)}
+.course-focus>.reveal:first-child{padding-top:24px}
+.course-focus-row{display:grid;grid-template-columns:34px 1fr;align-items:center;padding:20px 0;border-bottom:1px solid var(--line)}
+.course-focus-row span{font-size:8px;color:var(--muted)}
+.course-focus-row h3{font:500 27px/1 var(--serif);margin:0}
+.course-info-band{margin:0 20px 76px;border-top:1px solid var(--line);border-left:1px solid var(--line);display:grid;grid-template-columns:1fr 1fr}
+.course-info-band>div{padding:22px 15px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);min-height:110px}
+.course-info-band span{display:block;font-size:7px;letter-spacing:.16em;color:var(--muted);margin-bottom:18px}
+.course-info-band strong{font:500 21px/1.05 var(--serif)}
+@media (min-width:900px){
+  .course-detail-hero{grid-template-columns:.9fr 1.1fr;align-items:center;min-height:calc(100vh - 114px);padding:6vw}
+  .course-detail-copy h1{font-size:clamp(85px,7vw,128px)}
+  .course-detail-copy>p:not(.eyebrow){font-size:13px}
+  .course-detail-image{height:76vh}
+  .course-detail-body{padding:120px 6vw;grid-template-columns:.9fr 1.1fr;gap:9vw;align-items:start}
+  .course-who{position:sticky;top:150px}
+  .course-who h2{font-size:66px}
+  .course-focus-row{grid-template-columns:60px 1fr;padding:28px 0}
+  .course-focus-row h3{font-size:43px}
+  .course-info-band{margin:0 6vw 110px;grid-template-columns:repeat(4,1fr)}
+  .course-info-band>div{min-height:150px;padding:28px}
+  .course-info-band strong{font-size:28px}
+}
