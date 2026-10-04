@@ -36,6 +36,7 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
           <button
             key={category}
             className={filter === category ? "is-active" : ""}
+            aria-pressed={filter === category}
             onClick={() => setFilter(category)}
           >
             {category}
@@ -59,7 +60,7 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
 
       {active && (
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={active.alt} onClick={() => setActive(null)}>
-          <button className="lightbox-close" aria-label="Close image" onClick={() => setActive(null)}>×</button>
+          <button className="lightbox-close" aria-label="Close image" autoFocus onClick={() => setActive(null)}>×</button>
           <figure onClick={(event) => event.stopPropagation()}>
             <img src={active.src} alt={active.alt} />
             <figcaption><span>{active.category}</span><strong>{active.label}</strong></figcaption>
