@@ -64,9 +64,10 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
         />
+        <a className="skip-link" href="#page-content">Skip to content</a>
         <CustomCursor />
         <Header />
-        {children}
+        <div id="page-content" tabIndex={-1}>{children}</div>
         <Footer />
       </body>
     </html>
