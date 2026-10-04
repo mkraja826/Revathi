@@ -51,7 +51,7 @@ export default function Page() {
       </section>
 
       <section className="bridal-editorial">
-        <div className="bridal-editorial-main" data-cursor="VIEW">
+        <div className="bridal-editorial-main">
           <img src="https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1600&q=82" alt="Bridal styling detail" loading="lazy" />
         </div>
         <div className="bridal-editorial-side">
