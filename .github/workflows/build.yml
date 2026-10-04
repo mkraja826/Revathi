@@ -23,5 +23,11 @@ jobs:
       - name: Install dependencies
         run: npm install --no-audit --no-fund
 
-      - name: Build Next.js
+      - name: Audit routes and public copy
+        run: npm run qa
+
+      - name: Build static site
         run: npm run build
+
+      - name: Verify Cloudflare Pages output
+        run: test -f out/index.html && test -f out/404.html
