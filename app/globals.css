@@ -87,3 +87,20 @@
   .proof-section .proof-index{font-size:360px;right:-10px;top:10px}
   .human-cta{grid-template-columns:1.4fr .6fr;align-items:end}
 }
+
+
+/* Temporary photography layer — replace with approved Revathi Blush assets later */
+.site-photo{display:block;width:100%;height:100%;object-fit:cover}
+.hero-frame .site-photo{position:absolute;inset:0}
+.hero-frame-one .site-photo{object-position:center 28%}
+.hero-frame-two .site-photo{object-position:center 38%}
+.editorial-card .site-photo{min-height:0;flex:1;object-position:center center}
+.academy-shot .site-photo{object-position:center 42%}
+.gallery-card{background:#4c2630}
+.gallery-card .site-photo{position:absolute;inset:0;z-index:0;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.gallery-card::after{inset:0;width:auto;height:auto;right:0;bottom:0;border-radius:0;transform:none;background:linear-gradient(180deg,rgba(25,8,13,.06) 35%,rgba(25,8,13,.58) 100%);z-index:1}
+.gallery-card span,.gallery-card strong{color:white;text-shadow:0 1px 14px rgba(0,0,0,.3)}
+.bridal-band-art>.site-photo{width:100%;height:100%;object-fit:cover;object-position:center 26%}
+@media (min-width:900px){
+  .gallery-card:hover .site-photo{transform:scale(1.035)}
+}
