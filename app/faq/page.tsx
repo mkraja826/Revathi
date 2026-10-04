@@ -1,0 +1,2 @@
+import SimplePage from "@/components/SimplePage";
+export default function Page(){return <SimplePage eyebrow="FAQ" title="Everything you need before you begin." copy="Course eligibility, practical training, certification, fees, batches and admissions information." cards={[{title:"Beginners",copy:"Course eligibility and whether prior experience is required."},{title:"Training",copy:"Practical learning, products and model practice details."},{title:"Admissions",copy:"Batch timing, fee and enrolment information."}]}/>}
