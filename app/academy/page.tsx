@@ -28,7 +28,7 @@ export default function Page() {
           </div>
         </div>
         <div className="academy-hero-stack">
-          <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82" alt="Makeup training reference" />
+          <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82" alt="Makeup training session" fetchPriority="high" />
           <img src="https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1100&q=82" alt="Makeup practice reference" />
           <span>ACADEMY / LB NAGAR</span>
         </div>
