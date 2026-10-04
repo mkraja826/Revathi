@@ -10,13 +10,53 @@ export const metadata: Metadata = {
     template: "%s | Revathi Blush",
   },
   description:
-    "Professional makeup academy and premium bridal studio in LB Nagar, Hyderabad. Explore makeup, bridal, hair styling, saree draping and masterclass programs.",
+    "Professional makeup academy and bridal studio in LB Nagar, Hyderabad. Explore makeup, bridal, hair styling, saree draping and masterclass programs.",
+  keywords: [
+    "makeup academy LB Nagar",
+    "makeup academy Hyderabad",
+    "bridal makeup artist LB Nagar",
+    "professional makeup course Hyderabad",
+    "Revathi Blush Studio Academy",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    title: "Revathi Blush Studio & Academy",
+    description: "Professional makeup academy and bridal studio in LB Nagar, Hyderabad.",
+  },
+};
+
+const businessSchema = {
+  "@context": "https://schema.org",
+  "@type": ["BeautySalon", "EducationalOrganization"],
+  name: "Revathi Blush Studio & Academy",
+  telephone: "+91 70956 57382",
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Shivapuri Colony",
+    addressLocality: "L. B. Nagar",
+    addressRegion: "Telangana",
+    postalCode: "500074",
+    addressCountry: "IN",
+  },
+  areaServed: {
+    "@type": "City",
+    name: "Hyderabad",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(businessSchema) }}
+        />
         <CustomCursor />
         <Header />
         {children}
