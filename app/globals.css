@@ -440,3 +440,11 @@ textarea:focus-visible{
 @media (hover:none){
   .course-row:hover{background:transparent;padding-left:8px;padding-right:8px}
 }
+
+.not-found-page{min-height:72vh;padding:100px 20px;display:flex;flex-direction:column;justify-content:center}
+.not-found-page h1{font:500 60px/.88 var(--serif);letter-spacing:-.045em;margin:0}
+.not-found-page>p:not(.eyebrow){font-size:12px;line-height:1.8;color:var(--muted);max-width:480px;margin:26px 0}
+@media (min-width:900px){
+  .not-found-page{min-height:78vh;padding:9vw 6vw}
+  .not-found-page h1{font-size:clamp(88px,7vw,132px)}
+}
