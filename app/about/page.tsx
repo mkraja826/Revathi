@@ -17,7 +17,7 @@ export default function Page() {
           <p>Makeup should feel polished without losing the person underneath it. Training should feel practical enough to use beyond the classroom.</p>
         </div>
         <div className="about-hero-image" data-cursor="VIEW">
-          <img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1600&q=82" alt="Makeup artistry reference" />
+          <img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1600&q=82" alt="Makeup artist at work" />
           <span>REVATHI BLUSH · HYDERABAD</span>
         </div>
       </section>
@@ -32,7 +32,7 @@ export default function Page() {
         <Reveal delay={100}>
           <div className="about-story-copy">
             <p>Revathi Blush brings bridal artistry and professional makeup education under one brand in LB Nagar, Hyderabad.</p>
-            <p>The website is designed around the same idea: fewer gimmicks, stronger detail, and a clear focus on the work itself.</p>
+            <p>The focus is simple: considered technique, personal service and a polished finish.</p>
             <Link href="/gallery" className="text-link">See the visual work →</Link>
           </div>
         </Reveal>
@@ -56,8 +56,8 @@ export default function Page() {
       </section>
 
       <section className="about-image-pair">
-        <div><img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82" alt="Makeup academy training reference" loading="lazy" /></div>
-        <div><img src="https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1400&q=82" alt="Bridal beauty detail reference" loading="lazy" /></div>
+        <div><img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82" alt="Makeup academy training" loading="lazy" /></div>
+        <div><img src="https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1400&q=82" alt="Bridal beauty detail" loading="lazy" /></div>
       </section>
 
       <section className="inner-cta">
