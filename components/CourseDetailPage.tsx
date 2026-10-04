@@ -7,7 +7,7 @@ type CourseDetailProps = {
   intro: string;
   image: string;
   imageAlt: string;
-  focus: string[];
+  focus?: string[];
   suitedFor: string;
 };
 
@@ -41,12 +41,18 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
         </Reveal>
 
         <div className="course-focus">
-          <Reveal><p className="eyebrow">THE LEARNING FOCUS</p></Reveal>
-          {focus.map((item, index) => (
-            <Reveal key={item} delay={index * 60}>
-              <div className="course-focus-row">
-                <span>0{index + 1}</span>
-                <h3>{item}</h3>
+          <Reveal><p className="eyebrow">COURSE INFORMATION</p></Reveal>
+          {[
+            ["01", "Current syllabus", "Shared by the academy on enquiry"],
+            ["02", "Duration", "Confirmed for the current batch"],
+            ["03", "Fees", "Shared directly before enrolment"],
+            ["04", "Batch schedule", "Confirmed by the academy"],
+          ].map(([number, label, value], index) => (
+            <Reveal key={label} delay={index * 60}>
+              <div className="course-focus-row course-focus-row-info">
+                <span>{number}</span>
+                <h3>{label}</h3>
+                <p>{value}</p>
               </div>
             </Reveal>
           ))}
