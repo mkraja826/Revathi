@@ -27,7 +27,7 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
           </div>
         </div>
         <div className="course-detail-image" data-cursor="VIEW">
-          <img src={image} alt={imageAlt} />
+          <img src={image} alt={imageAlt} fetchPriority="high" />
           <span>REVATHI BLUSH / ACADEMY</span>
         </div>
       </section>
@@ -35,8 +35,8 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
       <section className="course-detail-body">
         <Reveal>
           <div className="course-who">
-            <p className="eyebrow">WHO IT&apos;S FOR</p>
-            <h2>{suitedFor}</h2>
+            <p className="eyebrow">BEFORE YOU ENROL</p>
+            <h2>Ask the academy how this course fits your current experience and goals.</h2>
           </div>
         </Reveal>
 
