@@ -44,7 +44,7 @@ export default function Page() {
       </section>
 
       <section className="contact-photo-band">
-        <img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1800&q=82" alt="Makeup studio reference" loading="lazy" />
+        <img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1800&q=82" alt="Makeup studio setting" loading="lazy" />
         <div><span>REVATHI BLUSH</span><strong>LB Nagar · Hyderabad</strong></div>
       </section>
     </main>
