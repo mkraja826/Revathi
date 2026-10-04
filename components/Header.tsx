@@ -75,7 +75,14 @@ export default function Header() {
         </button>
       </header>
 
-      <div id="mobile-navigation" className={"mobile-menu " + (open ? "is-open" : "")} aria-hidden={!open}>
+      <div
+        id="mobile-navigation"
+        className={"mobile-menu " + (open ? "is-open" : "")}
+        aria-hidden={!open}
+        role="dialog"
+        aria-modal={open || undefined}
+        aria-label="Site navigation"
+      >
         <div className="mobile-menu-index">MENU · REVATHI BLUSH</div>
         <nav aria-label="Mobile navigation">
           {links.map(([label, href], index) => (
