@@ -60,6 +60,30 @@ export default function Page() {
         </div>
       </section>
 
+      <section className="bridal-portfolio">
+        <div className="bridal-portfolio-heading">
+          <div>
+            <p className="eyebrow">BRIDAL DETAILS</p>
+            <h2>Look closer at the finish.</h2>
+          </div>
+          <Link className="text-link" href="/gallery">View full gallery →</Link>
+        </div>
+        <div className="bridal-portfolio-grid">
+          <Link href="/gallery" className="bridal-portfolio-card bridal-portfolio-card-large">
+            <img src="https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1400&q=82" alt="Bridal portrait detail" loading="lazy" />
+            <span>BRIDAL PORTRAIT</span>
+          </Link>
+          <Link href="/gallery" className="bridal-portfolio-card">
+            <img src="https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1200&q=82" alt="Bridal makeup finishing detail" loading="lazy" />
+            <span>FINISHING DETAIL</span>
+          </Link>
+          <Link href="/gallery" className="bridal-portfolio-card">
+            <img src="https://images.unsplash.com/photo-1781187009755-0cbc0c4cd2b3?auto=format&fit=crop&w=1200&q=82" alt="Bridal beauty portrait" loading="lazy" />
+            <span>OCCASION LOOK</span>
+          </Link>
+        </div>
+      </section>
+
       <section className="inner-cta bridal-booking">
         <div><p className="eyebrow eyebrow-light">YOUR DATE</p><h2>Start with availability.</h2></div>
         <div className="booking-actions">
