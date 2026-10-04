@@ -44,7 +44,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="hero-visual art-directed-hero" data-cursor="VIEW">
+        <div className="hero-visual art-directed-hero">
           <div className="hero-frame hero-frame-one">
             <img className="site-photo" src={temporaryImages.bridalHero} alt="Bridal makeup inspiration" fetchPriority="high" />
             <small>01 / BRIDAL</small>
@@ -76,7 +76,7 @@ export default function Home() {
         <div className="editorial-grid editorial-grid-human">
           <Reveal className="editorial-card tall">
             <img className="site-photo" src={temporaryImages.studioPractice} alt="Makeup artistry reference" />
-            <small>THE ARTIST</small>
+            <small>THE CRAFT</small>
           </Reveal>
           <Reveal delay={120} className="editorial-card academy-shot">
             <img className="site-photo" src={temporaryImages.academyPractice} alt="Makeup training reference" />
@@ -134,7 +134,7 @@ export default function Home() {
           <div><p className="eyebrow">IN THE ACADEMY</p><h2>The process deserves<br />to be seen.</h2></div>
           <Link href="/student-stories" className="text-link">Student work →</Link>
         </div>
-        <div className="drag-gallery" data-cursor="DRAG">
+        <div className="drag-gallery">
           {[
             ["CLASSROOM", temporaryImages.academyPractice],
             ["PRACTICE", temporaryImages.makeupSession],
@@ -180,7 +180,7 @@ export default function Home() {
         </div>
         <div className="faq-static">
           {["Who can join the academy?","Do beginners need prior experience?","Is practical training included?","How do I ask about fees and batches?"].map((q,i)=>
-            <div key={q}><span>0{i+1}</span><p>{q}</p><b>+</b></div>
+            <Link href="/faq" key={q}><span>0{i+1}</span><p>{q}</p><b>↗</b></Link>
           )}
         </div>
       </section>
