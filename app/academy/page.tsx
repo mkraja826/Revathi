@@ -1,0 +1,2 @@
+import SimplePage from "@/components/SimplePage";
+export default function Page(){return <SimplePage eyebrow="ACADEMY" title="Professional learning. Beautifully delivered." copy="Explore a practical, polished academy experience designed for aspiring artists and working professionals." cards={[{title:"Learn",copy:"Clear foundations, technique and product understanding."},{title:"Practice",copy:"Hands-on learning and guided skill development."},{title:"Grow",copy:"Portfolio, confidence and career-oriented presentation."}]}/>}
