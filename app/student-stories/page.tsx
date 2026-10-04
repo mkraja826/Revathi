@@ -24,7 +24,7 @@ export default function Page() {
           <p>The academy experience is not only about the final look. It is about becoming more certain with every repetition.</p>
         </div>
         <div className="student-hero-image">
-          <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1600&q=82" alt="Makeup training session" />
+          <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1600&q=82" alt="Makeup training session" fetchPriority="high" />
           <span>ACADEMY / PRACTICE</span>
         </div>
       </section>
