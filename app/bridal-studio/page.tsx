@@ -18,7 +18,7 @@ export default function Page() {
   return (
     <main className="bridal-page">
       <section className="bridal-page-hero">
-        <img src="https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1800&q=84" alt="Bridal makeup look" />
+        <img src="https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1800&q=84" alt="Bridal makeup look" fetchPriority="high" />
         <div className="bridal-page-overlay" />
         <div className="bridal-page-copy">
           <p className="eyebrow eyebrow-light">REVATHI BLUSH / BRIDAL STUDIO</p>
