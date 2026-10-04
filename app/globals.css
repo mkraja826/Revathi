@@ -104,3 +104,131 @@
 @media (min-width:900px){
   .gallery-card:hover .site-photo{transform:scale(1.035)}
 }
+
+
+/* Inner-page production pass */
+.inner-section{padding:76px 20px}
+.inner-cta{background:var(--burgundy-2);color:#fff;padding:70px 20px;display:grid;gap:28px}
+.inner-cta h2{font:500 48px/.92 var(--serif);letter-spacing:-.04em;margin:0}
+.inner-cta .eyebrow{margin-bottom:14px}
+.course-catalogue{display:grid;gap:72px}
+.program-panel{display:grid;gap:28px;border-top:1px solid var(--line);padding-top:18px}
+.program-image{height:54vh;min-height:420px;position:relative;overflow:hidden;display:block;background:#e6d3cf}
+.program-image img{width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.program-image>span{position:absolute;right:0;bottom:0;background:var(--ivory);padding:10px 12px;font-size:9px;letter-spacing:.16em}
+.program-copy h2{font:500 48px/.94 var(--serif);letter-spacing:-.035em;margin:0 0 18px}
+.program-copy>p:not(.eyebrow){font-size:12px;line-height:1.8;color:var(--muted);max-width:560px}
+.program-copy ul{list-style:none;padding:0;margin:28px 0;border-top:1px solid var(--line)}
+.program-copy li{padding:13px 0;border-bottom:1px solid var(--line);font-size:10px;letter-spacing:.04em}
+.program-copy li::before{content:"—";margin-right:12px;color:var(--rose)}
+.program-actions{display:flex;gap:24px;flex-wrap:wrap}
+.muted-link{color:var(--muted)}
+.bridal-page-hero{min-height:78svh;position:relative;display:flex;align-items:end;overflow:hidden}
+.bridal-page-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 22%}
+.bridal-page-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(24,7,12,.08),rgba(24,7,12,.72))}
+.bridal-page-copy{position:relative;z-index:2;color:#fff;padding:64px 20px;max-width:760px}
+.bridal-page-copy h1{font:500 59px/.86 var(--serif);letter-spacing:-.045em;margin:0}
+.bridal-page-copy h1 em{font-weight:500}
+.bridal-page-copy>p:not(.eyebrow){font-size:12px;line-height:1.7;color:#eee0e2;max-width:420px;margin:24px 0}
+.bridal-intro{display:grid;gap:30px}
+.bridal-intro h2{font:500 48px/.94 var(--serif);letter-spacing:-.035em;margin:0}
+.bridal-intro-copy{font-size:12px;line-height:1.9;color:var(--muted);max-width:570px;margin:0}
+.bridal-services{border-top:1px solid var(--line);margin:0 20px}
+.bridal-services article{display:grid;grid-template-columns:32px 1fr;gap:8px;padding:26px 0;border-bottom:1px solid var(--line)}
+.bridal-services span{font-size:9px;color:var(--muted);padding-top:5px}
+.bridal-services h3{font:500 31px/1 var(--serif);margin:0}
+.bridal-services p{grid-column:2;margin:4px 0 0;color:var(--muted);font-size:10px;line-height:1.7;max-width:560px}
+.bridal-editorial{padding:82px 20px;display:grid;gap:12px;background:var(--paper)}
+.bridal-editorial-main{height:62vh;min-height:440px;overflow:hidden}
+.bridal-editorial-main img,.bridal-editorial-side img{width:100%;height:100%;object-fit:cover}
+.bridal-editorial-main img{object-position:center 28%}
+.bridal-editorial-side{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:end}
+.bridal-editorial-side img{height:260px}
+.bridal-editorial-side p{font-size:10px;line-height:1.7;margin:0;padding:16px 0}
+.bridal-editorial-side p span{display:block;font-size:8px;letter-spacing:.18em;color:var(--burgundy);margin-bottom:10px}
+.booking-actions{display:flex;gap:10px;flex-wrap:wrap}
+.gallery-page-section{padding-top:50px}
+.gallery-filter{display:flex;gap:8px;overflow-x:auto;padding-bottom:20px;margin-bottom:18px}
+.gallery-filter button{border:1px solid var(--line);background:transparent;padding:10px 14px;white-space:nowrap;font-size:9px;letter-spacing:.08em;color:var(--muted);cursor:pointer}
+.gallery-filter button.is-active{background:var(--ink);color:#fff;border-color:var(--ink)}
+.portfolio-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.portfolio-item{appearance:none;border:0;padding:0;background:#ddd;position:relative;overflow:hidden;min-height:260px;text-align:left;color:white;cursor:pointer}
+.portfolio-item:nth-child(3n+1){grid-column:1/-1;min-height:430px}
+.portfolio-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.22,1,.36,1)}
+.portfolio-item::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(20,7,11,.68))}
+.portfolio-item>span{position:absolute;z-index:2;left:14px;right:14px;bottom:14px;display:flex;justify-content:space-between;align-items:end;gap:12px}
+.portfolio-item small{font-size:7px;letter-spacing:.17em;text-transform:uppercase}
+.portfolio-item strong{font:500 22px/1 var(--serif)}
+.lightbox{position:fixed;inset:0;background:rgba(18,6,10,.94);z-index:120;display:grid;place-items:center;padding:24px}
+.lightbox figure{margin:0;width:min(900px,100%);max-height:86vh;display:grid}
+.lightbox figure img{width:100%;height:min(72vh,760px);object-fit:contain;background:#13090c}
+.lightbox figcaption{color:#fff;padding:12px 0;display:flex;justify-content:space-between;align-items:center}
+.lightbox figcaption span{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#cbb9bc}
+.lightbox figcaption strong{font:500 25px/1 var(--serif)}
+.lightbox-close{position:absolute;top:18px;right:18px;width:44px;height:44px;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;font-size:28px;line-height:1;cursor:pointer}
+.contact-layout{display:grid;gap:54px}
+.contact-details h2{font:500 49px/.92 var(--serif);letter-spacing:-.04em;margin:0 0 42px}
+.contact-rule{display:grid;grid-template-columns:32px 1fr;gap:8px;padding:20px 0;border-top:1px solid var(--line)}
+.contact-rule:last-of-type{border-bottom:1px solid var(--line)}
+.contact-rule>span{font-size:8px;color:var(--muted)}
+.contact-rule small{display:block;font-size:7px;letter-spacing:.17em;color:var(--muted);margin-bottom:7px}
+.contact-rule a{font:500 25px/1 var(--serif)}
+.contact-rule p{font-size:11px;line-height:1.7;margin:0}
+.contact-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:28px}
+.enquiry-form{background:var(--paper);padding:28px 20px;display:grid;gap:22px}
+.form-intro span{font-size:8px;letter-spacing:.18em;color:var(--burgundy);font-weight:700}
+.form-intro p{font-size:10px;line-height:1.6;color:var(--muted);margin:8px 0 0}
+.enquiry-form label>span,.enquiry-form legend{display:block;font-size:8px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:8px;color:var(--muted)}
+.enquiry-form input,.enquiry-form textarea{width:100%;border:0;border-bottom:1px solid rgba(36,28,29,.28);background:transparent;border-radius:0;padding:11px 0;color:var(--ink);outline:none}
+.enquiry-form textarea{resize:vertical}
+.enquiry-form input:focus,.enquiry-form textarea:focus{border-color:var(--burgundy)}
+.enquiry-form fieldset{border:0;padding:0;margin:0}
+.interest-pills{display:flex;gap:7px;flex-wrap:wrap}
+.interest-pills button{border:1px solid var(--line);background:transparent;padding:9px 11px;font-size:8px;cursor:pointer}
+.interest-pills button.is-selected{background:var(--burgundy);color:#fff;border-color:var(--burgundy)}
+.form-submit{width:100%;border:0;cursor:pointer}
+.contact-photo-band{height:58vh;min-height:430px;position:relative;overflow:hidden}
+.contact-photo-band img{width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.contact-photo-band::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(25,8,13,.62))}
+.contact-photo-band>div{position:absolute;z-index:2;left:20px;right:20px;bottom:22px;color:#fff;display:flex;justify-content:space-between;align-items:end}
+.contact-photo-band span{font-size:8px;letter-spacing:.17em}
+.contact-photo-band strong{font:500 22px/1 var(--serif)}
+@media (min-width:900px){
+  .inner-section{padding:110px 6vw}
+  .inner-cta{padding:90px 6vw;grid-template-columns:1fr auto;align-items:end}
+  .inner-cta h2{font-size:76px}
+  .course-catalogue{gap:120px}
+  .program-panel{grid-template-columns:1.08fr .92fr;gap:7vw;align-items:center}
+  .program-panel:nth-child(even){grid-template-columns:.92fr 1.08fr}
+  .program-panel:nth-child(even) .program-image{order:2}
+  .program-image{height:72vh;min-height:600px}
+  .program-copy h2{font-size:68px}
+  .program-copy li{font-size:11px}
+  .program-image:hover img{transform:scale(1.025)}
+  .bridal-page-hero{min-height:calc(100vh - 114px)}
+  .bridal-page-copy{padding:7vw 6vw}
+  .bridal-page-copy h1{font-size:clamp(88px,7.2vw,132px)}
+  .bridal-page-copy>p:not(.eyebrow){font-size:13px}
+  .bridal-intro{grid-template-columns:1.1fr .9fr;align-items:end}
+  .bridal-intro h2{font-size:78px}
+  .bridal-services{margin:0 6vw}
+  .bridal-services article{grid-template-columns:60px .8fr 1fr;align-items:center;padding:34px 0}
+  .bridal-services h3{font-size:45px}
+  .bridal-services p{grid-column:auto;margin:0;font-size:11px}
+  .bridal-editorial{padding:120px 6vw;grid-template-columns:1.25fr .75fr;gap:18px}
+  .bridal-editorial-main{height:80vh}
+  .bridal-editorial-side{grid-template-columns:1fr;align-content:end}
+  .bridal-editorial-side img{height:50vh}
+  .bridal-editorial-side p{max-width:330px}
+  .gallery-filter{margin-bottom:26px}
+  .portfolio-grid{grid-template-columns:1.15fr .85fr 1fr;grid-auto-rows:340px;gap:12px}
+  .portfolio-item,.portfolio-item:nth-child(3n+1){grid-column:auto;min-height:0}
+  .portfolio-item-1,.portfolio-item-6{grid-row:span 2}
+  .portfolio-item-3,.portfolio-item-8{grid-column:span 2}
+  .portfolio-item:hover img{transform:scale(1.025)}
+  .contact-layout{grid-template-columns:.9fr 1.1fr;gap:8vw;align-items:start}
+  .contact-details h2{font-size:74px}
+  .enquiry-form{padding:46px}
+  .contact-photo-band{height:78vh}
+  .contact-photo-band>div{left:6vw;right:6vw;bottom:36px}
+}
