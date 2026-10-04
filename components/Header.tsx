@@ -47,7 +47,7 @@ export default function Header() {
 
   return (
     <>
-      <div className="announcement">Admissions open · Professional makeup batches · LB Nagar, Hyderabad</div>
+      <div className="announcement">Professional Makeup Academy · Bridal Studio · LB Nagar, Hyderabad</div>
       <header className={"site-header " + (scrolled ? "is-scrolled" : "")}>
         <Link href="/" className="brand" aria-label="Revathi Blush home">
           <span className="brand-mark">RB</span>
