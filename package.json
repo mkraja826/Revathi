@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "qa": "node scripts/qa.mjs",
+    "check": "npm run qa && npm run build"
   },
   "dependencies": {
     "next": "16.0.1",
