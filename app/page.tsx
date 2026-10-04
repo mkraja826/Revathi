@@ -75,7 +75,7 @@ export default function Home() {
           </Reveal>
           <Reveal delay={220} className="editorial-note">
             <span className="hand-note">studio note</span>
-            <p>Not a generic salon course page. The final site will be built around Revathi&apos;s actual work, students and teaching style.</p>
+            <p>Beauty is personal. Technique is learned. The best work respects both.</p>
           </Reveal>
         </div>
       </section>
@@ -132,7 +132,6 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <p className="gallery-disclaimer">Real student photography will replace these art-direction placeholders before launch.</p>
       </section>
 
       <section className="bridal-band human-bridal">
@@ -151,10 +150,10 @@ export default function Home() {
       <section className="section proof-section">
         <div className="proof-index">05</div>
         <Reveal>
-          <p className="eyebrow">REAL PROOF, NOT FILLER</p>
-          <h2>Student reviews belong here<br />only when they are real.</h2>
-          <p>We are deliberately not filling this section with invented testimonials. Verified student and bridal-client feedback will be added with names, context and imagery where available.</p>
-          <Link href="/testimonials" className="text-link">Testimonials →</Link>
+          <p className="eyebrow">LB NAGAR · HYDERABAD</p>
+          <h2>A local studio with<br />a serious point of view.</h2>
+          <p>Visit Revathi Blush for academy enquiries, course information and bridal consultations in Shivapuri Colony, LB Nagar.</p>
+          <Link href="/contact" className="text-link">Visit / contact →</Link>
         </Reveal>
       </section>
 
