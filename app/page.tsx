@@ -1,5 +1,13 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import Reveal from "@/components/Reveal";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/" },
+  title: "Revathi Blush Studio & Academy | LB Nagar, Hyderabad",
+  description: "Professional makeup academy and bridal studio in LB Nagar, Hyderabad. Explore courses, bridal artistry, student work and enquiries.",
+};
+
 
 const courses = [
   { title: "Professional Makeup", copy: "Foundations, finish and the working habits behind a professional kit.", href: "/courses/professional-makeup", number: "01" },
