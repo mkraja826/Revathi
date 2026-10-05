@@ -8,7 +8,7 @@ const links = [
   ["Home", "/"],
   ["Academy", "/academy"],
   ["Courses", "/courses"],
-  ["Bridal Studio", "/bridal-studio"],
+  ["Bridal Makeup", "/bridal-studio"],
   ["Gallery", "/gallery"],
   ["About", "/about"],
   ["Contact", "/contact"],
@@ -62,7 +62,7 @@ export default function Header() {
           ))}
         </nav>
 
-        <a className="header-cta" href="https://wa.me/917095657382" target="_blank" rel="noreferrer">Enquire</a>
+        <a className="header-cta" href="https://wa.me/917095657382" target="_blank" rel="noreferrer">WhatsApp</a>
 
         <button
           className={"menu-toggle " + (open ? "is-open" : "")}
@@ -98,8 +98,8 @@ export default function Header() {
           ))}
         </nav>
         <div className="mobile-menu-footer">
-          <p>Professional makeup education & bridal artistry in LB Nagar, Hyderabad.</p>
-          <a href="https://wa.me/917095657382" target="_blank" rel="noreferrer" className="button button-light">WhatsApp the Academy</a>
+          <p>Makeup courses and bridal makeup services in LB Nagar, Hyderabad.</p>
+          <a href="https://wa.me/917095657382" target="_blank" rel="noreferrer" className="button button-light">WhatsApp Revathi Blush</a>
         </div>
       </div>
     </>
