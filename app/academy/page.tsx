@@ -21,8 +21,8 @@ export default function Page() {
       <section className="academy-hero">
         <div className="academy-hero-copy">
           <p className="eyebrow">REVATHI BLUSH ACADEMY</p>
-          <h1>Learn the work.<br /><em>Then make it yours.</em></h1>
-          <p>Professional beauty training in LB Nagar for learners who want practical technique, not just theory.</p>
+          <h1>Learn professional beauty skills.<br /><em>Practice them with confidence.</em></h1>
+          <p>Practical makeup and beauty training in LB Nagar, Hyderabad, for beginners and developing artists.</p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/courses">View courses</Link>
             <a className="button button-ghost" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20want%20academy%20admission%20details." target="_blank" rel="noreferrer">Ask about admissions</a>
@@ -37,8 +37,8 @@ export default function Page() {
 
       <section className="inner-section academy-method">
         <Reveal>
-          <p className="eyebrow">HOW LEARNING SHOULD FEEL</p>
-          <h2>Clear enough to follow.<br />Practical enough to remember.</h2>
+          <p className="eyebrow">HOW YOU LEARN</p>
+          <h2>Clear instruction.<br />Practical learning.</h2>
         </Reveal>
         <div className="academy-step-list">
           {steps.map(([n,title,copy], index) => (
@@ -57,7 +57,7 @@ export default function Page() {
         <div className="academy-course-band-head">
           <div>
             <p className="eyebrow eyebrow-light">LEARNING PATHS</p>
-            <h2>Choose the skill you want to build.</h2>
+            <h2>Choose what you want to learn.</h2>
           </div>
           <Link className="button button-light" href="/courses">See all courses</Link>
         </div>
@@ -85,8 +85,8 @@ export default function Page() {
         <Reveal>
           <div>
             <p className="eyebrow">ADMISSIONS</p>
-            <h2>Batch details are shared directly.</h2>
-            <p>Course duration, current fees, batch dates and certificate details can vary by program. The academy can confirm the latest information before you enrol.</p>
+            <h2>Get the latest course details.</h2>
+            <p>Course duration, fees, batch dates and certificate details may vary by program. Contact the academy for the latest information before you enrol.</p>
             <a className="text-link" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20please%20share%20current%20academy%20batch%20details." target="_blank" rel="noreferrer">Ask for current batch details →</a>
           </div>
         </Reveal>
