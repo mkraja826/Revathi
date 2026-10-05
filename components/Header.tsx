@@ -50,7 +50,7 @@ export default function Header() {
       <div className="announcement">REVATHI BLUSH · LB NAGAR · HYDERABAD</div>
       <header className={"site-header " + (scrolled ? "is-scrolled" : "")}>
         <Link href="/" className="brand" aria-label="Revathi Blush home">
-          <span className="brand-mark brand-mark-logo"><img src="/revathi-logo-official.svg" alt="" aria-hidden="true" /></span>
+          <span className="brand-mark brand-mark-logo"><img src="/revathi-blush-logo-transparent.png" alt="" aria-hidden="true" /></span>
           <span><strong>REVATHI BLUSH</strong><small>STUDIO & ACADEMY</small></span>
         </Link>
 
