@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/faq/" },
   title: "FAQ | Courses, Admissions & Bridal",
   description: "Frequently asked questions about Revathi Blush Studio & Academy courses, admissions, bridal enquiries and location in LB Nagar, Hyderabad.",
 };
