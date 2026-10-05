@@ -151,7 +151,7 @@ export default function Home() {
           ].map(([label, image], i) => (
             <div className={"gallery-card gallery-card-" + (i+1)} key={label}>
               <img className="site-photo" src={image} alt={label + " reference"} loading="lazy" />
-              <span>{String(i+1).padStart(2,"0")}</span><strong>{label}</strong>
+              <span>{String(i+1).padStart(2,"0")} /</span><strong>{label}</strong>
             </div>
           ))}
         </div>
