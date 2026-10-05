@@ -3,6 +3,7 @@ import PageHero from "@/components/PageHero";
 import GalleryGrid from "@/components/GalleryGrid";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/gallery/" },
   title: "Gallery | Bridal Makeup & Academy",
   description: "Explore the Revathi Blush visual direction for bridal artistry, makeup training, student work and styling.",
 };
