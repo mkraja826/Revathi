@@ -21,8 +21,8 @@ export default function Page() {
       <section className="student-hero">
         <div className="student-hero-copy">
           <p className="eyebrow">STUDENT JOURNEY</p>
-          <h1>Progress looks<br /><em>different on everyone.</em></h1>
-          <p>The academy experience is not only about the final look. It is about becoming more certain with every repetition.</p>
+          <h1>From practice<br /><em>to portfolio.</em></h1>
+          <p>The work gets stronger through repetition: understanding the process, correcting the details and learning to present the final result with confidence.</p>
         </div>
         <div className="student-hero-image">
           <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1600&q=82" alt="Makeup training session" fetchPriority="high" />
