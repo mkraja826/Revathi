@@ -28,8 +28,8 @@ export default function EnquiryForm() {
   return (
     <form className="enquiry-form" onSubmit={submit}>
       <div className="form-intro">
-        <span>QUICK ENQUIRY</span>
-        <p>Send the details through WhatsApp. No account or sign-in required.</p>
+        <span>CONTACT ON WHATSAPP</span>
+        <p>Fill in your details and continue to WhatsApp. No account is required.</p>
       </div>
 
       <label>
@@ -67,11 +67,11 @@ export default function EnquiryForm() {
       </fieldset>
 
       <label>
-        <span>Anything else?</span>
-        <textarea name="message" rows={4} placeholder="Optional message" />
+        <span>Message (optional)</span>
+        <textarea name="message" rows={4} placeholder="Add any course, batch or event details" />
       </label>
 
-      <button className="button button-primary form-submit" type="submit">Send via WhatsApp ↗</button>
+      <button className="button button-primary form-submit" type="submit">Continue to WhatsApp ↗</button>
     </form>
   );
 }
