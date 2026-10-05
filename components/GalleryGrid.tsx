@@ -15,35 +15,44 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
 
   const categories = ["All", ...Array.from(new Set(items.map((item) => item.category)))];
   const filtered = filter === "All" ? items : items.filter((item) => item.category === filter);
+  const activeIndex = active ? filtered.findIndex((item) => item.src === active.src) : -1;
+
+  const move = (direction: number) => {
+    if (activeIndex < 0 || filtered.length < 2) return;
+    const nextIndex = (activeIndex + direction + filtered.length) % filtered.length;
+    setActive(filtered[nextIndex]);
+  };
 
   useEffect(() => {
     if (!active) return;
-    const close = (event: KeyboardEvent) => {
+    const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") setActive(null);
+      if (event.key === "ArrowLeft") move(-1);
+      if (event.key === "ArrowRight") move(1);
     };
     document.body.style.overflow = "hidden";
-    window.addEventListener("keydown", close);
+    window.addEventListener("keydown", onKey);
     return () => {
       document.body.style.overflow = "";
-      window.removeEventListener("keydown", close);
+      window.removeEventListener("keydown", onKey);
     };
-  }, [active]);
+  }, [active, activeIndex, filtered]);
 
   return (
     <>
       <div className="gallery-filter-wrap">
         <span className="gallery-filter-label">FILTER</span>
         <div className="gallery-filter" aria-label="Gallery filters">
-        {categories.map((category) => (
-          <button
-            key={category}
-            className={filter === category ? "is-active" : ""}
-            aria-pressed={filter === category}
-            onClick={() => setFilter(category)}
-          >
-            {category}
-          </button>
-        ))}
+          {categories.map((category) => (
+            <button
+              key={category}
+              className={filter === category ? "is-active" : ""}
+              aria-pressed={filter === category}
+              onClick={() => setFilter(category)}
+            >
+              {category}
+            </button>
+          ))}
         </div>
         <span className="gallery-helper">Tap an image to view full size</span>
       </div>
@@ -65,6 +74,12 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
       {active && (
         <div className="lightbox" role="dialog" aria-modal="true" aria-label={active.alt} onClick={() => setActive(null)}>
           <button className="lightbox-close" aria-label="Close image" autoFocus onClick={() => setActive(null)}>×</button>
+          {filtered.length > 1 && (
+            <>
+              <button className="lightbox-nav lightbox-prev" aria-label="Previous image" onClick={(event) => { event.stopPropagation(); move(-1); }}>←</button>
+              <button className="lightbox-nav lightbox-next" aria-label="Next image" onClick={(event) => { event.stopPropagation(); move(1); }}>→</button>
+            </>
+          )}
           <figure onClick={(event) => event.stopPropagation()}>
             <img src={active.src} alt={active.alt} />
             <figcaption><span>{active.category}</span><strong>{active.label}</strong></figcaption>
