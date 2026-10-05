@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..700&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
   --ivory: #fff9f6;
@@ -11,7 +11,7 @@
   --ink: #241c1d;
   --muted: #75686a;
   --line: rgba(36,28,29,.14);
-  --serif: "Cormorant Garamond", Georgia, serif;
+  --serif: "Bodoni Moda", "Times New Roman", serif;
   --sans: "Manrope", Arial, sans-serif;
 }
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:var(--sans);cursor:auto}a{color:inherit;text-decoration:none}button,input,textarea{font:inherit}::selection{background:var(--burgundy);color:white}
@@ -923,4 +923,318 @@ button,a{touch-action:manipulation}
     grid-column:1;
     min-height:0;
   }
+}
+
+
+/* Typography system v2 — premium fashion editorial, cleaner and more readable */
+:root{
+  --type-display: "Bodoni Moda", "Times New Roman", serif;
+  --type-body: "Manrope", Arial, sans-serif;
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-body: 15px;
+  --text-body-lg: 16px;
+}
+body{
+  font-family:var(--type-body);
+  font-size:var(--text-body);
+  line-height:1.65;
+  letter-spacing:-.006em;
+}
+h1,h2,h3,h4,h5,h6{font-family:var(--type-display)}
+p{line-height:1.72}
+.eyebrow{
+  font-family:var(--type-body);
+  font-size:10.5px;
+  line-height:1.35;
+  font-weight:700;
+  letter-spacing:.145em;
+}
+.announcement{
+  font-size:9.5px;
+  line-height:1.25;
+  letter-spacing:.105em;
+}
+.brand strong{
+  font-size:11.5px;
+  line-height:1.2;
+  letter-spacing:.115em;
+}
+.brand small{
+  font-size:7.5px;
+  line-height:1.2;
+  letter-spacing:.18em;
+}
+.brand-mark{font-family:var(--type-display);font-weight:500}
+.desktop-nav a,.header-cta{
+  font-size:12px;
+  line-height:1.2;
+  letter-spacing:.01em;
+  font-weight:600;
+}
+.mobile-menu nav a{
+  font-family:var(--type-display);
+  font-size:38px;
+  line-height:1.08;
+  letter-spacing:-.025em;
+  font-weight:500;
+}
+.button{
+  font-family:var(--type-body);
+  font-size:12.5px;
+  line-height:1;
+  font-weight:650;
+  letter-spacing:.018em;
+}
+.text-link{
+  font-size:12.5px;
+  line-height:1.3;
+  font-weight:650;
+  letter-spacing:.005em;
+}
+.hero h1,
+.page-hero h1,
+.course-detail-copy h1,
+.about-hero-copy h1,
+.academy-hero-copy h1,
+.student-hero-copy h1,
+.reviews-hero h1,
+.bridal-page-copy h1{
+  font-family:var(--type-display);
+  font-weight:500;
+  font-style:normal;
+  letter-spacing:-.045em;
+  line-height:.93;
+  text-wrap:balance;
+}
+.hero h1{font-size:clamp(52px,14.5vw,70px)}
+.hero h1 span:last-child,
+.hero h1 em,
+.page-hero h1 em,
+.course-detail-copy h1 em,
+.about-hero-copy h1 em,
+.academy-hero-copy h1 em,
+.student-hero-copy h1 em,
+.reviews-hero h1 em,
+.bridal-page-copy h1 em,
+.split-heading h2 em,
+.bridal-band h2 em{
+  font-style:normal;
+  font-weight:500;
+}
+.hero-copy,
+.page-hero-inner>p:not(.eyebrow),
+.course-detail-copy>p:not(.eyebrow),
+.about-hero-copy>p:not(.eyebrow),
+.academy-hero-copy>p:not(.eyebrow),
+.student-hero-copy>p:not(.eyebrow),
+.reviews-hero>p:not(.eyebrow){
+  font-size:15px;
+  line-height:1.72;
+  letter-spacing:-.008em;
+}
+.split-heading h2,
+.section-top h2,
+.dark-section h2,
+.faq-preview h2,
+.bridal-band-copy h2,
+.cta-section h2,
+.footer h2,
+.inner-cta h2,
+.about-story h2,
+.academy-method h2,
+.reviews-copy h2,
+.faq-page-intro h2,
+.academy-note h2,
+.student-progress h2,
+.course-who h2,
+.course-join-heading h2,
+.bridal-portfolio-heading h2{
+  font-family:var(--type-display);
+  font-weight:500;
+  font-style:normal;
+  letter-spacing:-.035em;
+  line-height:.98;
+  text-wrap:balance;
+}
+.split-heading h2,.section-top h2,.dark-section h2,.faq-preview h2{
+  font-size:clamp(40px,11.5vw,56px);
+}
+.intro-copy p,
+.standards-lede,
+.bridal-band-copy p:not(.eyebrow),
+.proof-section p:not(.eyebrow),
+.cta-side>p,
+.about-story-copy p,
+.academy-note p,
+.reviews-copy>p:not(.eyebrow),
+.faq-page-intro>p:not(.eyebrow),
+.bridal-intro-copy,
+.program-copy>p:not(.eyebrow){
+  font-size:14.5px;
+  line-height:1.76;
+}
+.course-row h3{
+  font-family:var(--type-display);
+  font-size:28px;
+  line-height:1.08;
+  letter-spacing:-.025em;
+  font-weight:500;
+}
+.course-row p{
+  font-size:12.5px;
+  line-height:1.65;
+}
+.standard-row h3,
+.bridal-services h3,
+.about-principles h3,
+.academy-step-list h3,
+.review-types h3,
+.student-stage-list h3,
+.course-focus-row h3,
+.course-join-grid h3{
+  font-family:var(--type-display);
+  font-weight:500;
+  letter-spacing:-.025em;
+  line-height:1.05;
+}
+.standard-row p,
+.bridal-services p,
+.about-principles p,
+.academy-step-list p,
+.review-types p,
+.student-stage-list p,
+.course-focus-row p,
+.course-join-grid p,
+.form-intro p,
+.contact-rule p,
+.editorial-note p{
+  font-size:12.5px;
+  line-height:1.68;
+}
+.faq-static>a p,
+.faq-accordion button strong{
+  font-family:var(--type-display);
+  font-weight:500;
+  letter-spacing:-.02em;
+  line-height:1.15;
+}
+.faq-static>a p{font-size:21px}
+.faq-accordion button strong{font-size:23px}
+.footer-grid p,
+.footer-grid a,
+.mobile-menu-footer p{
+  font-size:12px;
+  line-height:1.65;
+}
+.footer-grid strong{
+  font-family:var(--type-display);
+  font-weight:500;
+  font-size:28px;
+  letter-spacing:-.02em;
+}
+.hand-note{
+  font-family:var(--type-display)!important;
+  font-style:normal!important;
+  letter-spacing:-.025em;
+}
+.testimonial-section blockquote,
+.editorial-quote blockquote{
+  font-family:var(--type-display);
+  font-style:normal;
+  font-weight:500;
+  letter-spacing:-.03em;
+}
+@media (max-width:419px){
+  .hero h1{font-size:clamp(46px,13vw,54px);line-height:.95}
+  .page-hero h1,
+  .course-detail-copy h1,
+  .about-hero-copy h1,
+  .academy-hero-copy h1,
+  .student-hero-copy h1,
+  .reviews-hero h1{
+    font-size:clamp(43px,12.5vw,52px);
+    line-height:.96;
+  }
+  .bridal-page-copy h1{font-size:clamp(46px,13.2vw,56px);line-height:.95}
+  .split-heading h2,.section-top h2,.dark-section h2,.faq-preview h2{
+    font-size:clamp(36px,10.8vw,44px);
+    line-height:1;
+  }
+  .cta-section h2,.footer h2,.inner-cta h2,
+  .about-story h2,.academy-method h2,.reviews-copy h2,
+  .faq-page-intro h2,.academy-note h2,.student-progress h2,.course-who h2,
+  .course-join-heading h2,.bridal-portfolio-heading h2{
+    font-size:clamp(38px,11.3vw,46px);
+    line-height:.99;
+  }
+  .hero-copy,
+  .page-hero-inner>p:not(.eyebrow),
+  .course-detail-copy>p:not(.eyebrow),
+  .about-hero-copy>p:not(.eyebrow),
+  .academy-hero-copy>p:not(.eyebrow),
+  .student-hero-copy>p:not(.eyebrow){
+    font-size:14px;
+  }
+  .mobile-menu nav a{font-size:36px}
+  .course-row h3{font-size:25px}
+  .course-row p{font-size:12px}
+  .faq-static>a p{font-size:18px}
+  .footer-grid p,.footer-grid a,.mobile-menu-footer p{font-size:11.5px}
+}
+@media (min-width:640px) and (max-width:899px){
+  .hero h1{font-size:clamp(64px,9.3vw,78px)}
+  .page-hero h1,
+  .course-detail-copy h1,
+  .about-hero-copy h1,
+  .academy-hero-copy h1,
+  .student-hero-copy h1,
+  .reviews-hero h1{font-size:clamp(60px,8.5vw,76px)}
+  .split-heading h2,.section-top h2,.dark-section h2,.faq-preview h2{
+    font-size:clamp(50px,7vw,64px);
+  }
+}
+@media (min-width:900px){
+  body{font-size:16px}
+  .hero h1{font-size:clamp(76px,6.2vw,104px);line-height:.92}
+  .page-hero h1,
+  .course-detail-copy h1,
+  .about-hero-copy h1,
+  .academy-hero-copy h1,
+  .student-hero-copy h1,
+  .reviews-hero h1,
+  .bridal-page-copy h1{
+    font-size:clamp(72px,5.7vw,98px);
+    line-height:.94;
+  }
+  .split-heading h2,.section-top h2,.dark-section h2,.faq-preview h2{
+    font-size:clamp(54px,4.6vw,74px);
+    line-height:.98;
+  }
+  .cta-section h2,.footer h2,.inner-cta h2,
+  .about-story h2,.academy-method h2,.reviews-copy h2,
+  .faq-page-intro h2,.academy-note h2,.student-progress h2,.course-who h2,
+  .course-join-heading h2,.bridal-portfolio-heading h2{
+    font-size:clamp(54px,4.3vw,70px);
+    line-height:.98;
+  }
+  .hero-copy,
+  .page-hero-inner>p:not(.eyebrow),
+  .course-detail-copy>p:not(.eyebrow),
+  .about-hero-copy>p:not(.eyebrow),
+  .academy-hero-copy>p:not(.eyebrow),
+  .student-hero-copy>p:not(.eyebrow),
+  .reviews-hero>p:not(.eyebrow){
+    font-size:16px;
+    line-height:1.72;
+  }
+  .intro-copy p,.standards-lede,.bridal-band-copy p:not(.eyebrow),
+  .proof-section p:not(.eyebrow),.cta-side>p,.about-story-copy p,
+  .academy-note p,.reviews-copy>p:not(.eyebrow),.faq-page-intro>p:not(.eyebrow),
+  .bridal-intro-copy,.program-copy>p:not(.eyebrow){
+    font-size:15px;
+  }
+  .course-row h3{font-size:36px}
+  .course-row p{font-size:13px}
+  .faq-accordion button strong{font-size:30px}
 }
