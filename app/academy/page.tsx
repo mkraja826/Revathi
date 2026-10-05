@@ -54,11 +54,28 @@ export default function Page() {
       </section>
 
       <section className="academy-course-band">
-        <div>
-          <p className="eyebrow eyebrow-light">CURRENT LEARNING PATHS</p>
-          <h2>Makeup. Bridal. Hair.<br />Draping. Masterclasses.</h2>
+        <div className="academy-course-band-head">
+          <div>
+            <p className="eyebrow eyebrow-light">LEARNING PATHS</p>
+            <h2>Choose the skill you want to build.</h2>
+          </div>
+          <Link className="button button-light" href="/courses">See all courses</Link>
         </div>
-        <Link className="button button-light" href="/courses">See all courses</Link>
+        <div className="academy-path-links">
+          {[
+            ["01","Professional Makeup","/courses/professional-makeup"],
+            ["02","Bridal Makeup","/courses/bridal-makeup"],
+            ["03","Hair Styling","/courses/hair-styling"],
+            ["04","Saree Draping","/courses/saree-draping"],
+            ["05","Masterclasses","/courses/masterclasses"],
+          ].map(([number,label,href]) => (
+            <Link key={href} href={href}>
+              <span>{number}</span>
+              <strong>{label}</strong>
+              <b>↗</b>
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="inner-section academy-note">
