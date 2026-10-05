@@ -1579,3 +1579,13 @@ p{line-height:1.72}
 @media (prefers-reduced-motion:reduce){
   .gallery-scroll-hint b{animation:none}
 }
+
+.gallery-helper{
+  font-size:9px;
+  line-height:1.4;
+  letter-spacing:.08em;
+  color:var(--muted);
+}
+@media (min-width:640px){
+  .gallery-helper{margin-left:auto}
+}
