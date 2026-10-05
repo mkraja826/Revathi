@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/revathi-logo.svg",
+    icon: "/revathi-blush-logo-transparent.png",
   },
   openGraph: {
     type: "website",
