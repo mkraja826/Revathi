@@ -23,8 +23,8 @@ export default function PageHero({
         <p>{copy}</p>
         {showActions && (
           <div className="hero-actions">
-            {!hideEnquire && <Link href="/contact" className="button button-primary">Enquire now</Link>}
-            {!hideGallery && <Link href="/gallery" className="text-link">View our work →</Link>}
+            {!hideEnquire && <Link href="/contact" className="button button-primary">Contact us</Link>}
+            {!hideGallery && <Link href="/gallery" className="text-link">View gallery →</Link>}
           </div>
         )}
       </div>
