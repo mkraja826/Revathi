@@ -3,6 +3,7 @@ import PageHero from "@/components/PageHero";
 import EnquiryForm from "@/components/EnquiryForm";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/contact/" },
   title: "Contact & Admissions | LB Nagar",
   description: "Contact Revathi Blush Studio & Academy in Shivapuri Colony, LB Nagar, Hyderabad for course admissions and bridal enquiries.",
 };
