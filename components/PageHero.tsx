@@ -29,7 +29,7 @@ export default function PageHero({
         )}
       </div>
       <div className="page-hero-art" aria-hidden="true">
-        <span>RB</span>
+        <img src="/revathi-logo.svg" alt="" />
         <i />
         <small>STUDIO &amp; ACADEMY</small>
       </div>
