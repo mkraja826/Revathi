@@ -8,5 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
+    sitemap: "https://revathi.karthikraja826.workers.dev/sitemap.xml",
+    host: "https://revathi.karthikraja826.workers.dev",
   };
 }
