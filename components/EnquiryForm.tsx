@@ -46,7 +46,7 @@ export default function EnquiryForm() {
           autoComplete="tel"
           pattern="[0-9+() -]{7,20}"
           title="Enter a valid phone number"
-          placeholder="+91"
+          placeholder="+91 98765 43210"
         />
       </label>
 
@@ -71,7 +71,7 @@ export default function EnquiryForm() {
         <textarea name="message" rows={4} placeholder="Optional message" />
       </label>
 
-      <button className="button button-primary form-submit" type="submit">Continue on WhatsApp ↗</button>
+      <button className="button button-primary form-submit" type="submit">Send via WhatsApp ↗</button>
     </form>
   );
 }
