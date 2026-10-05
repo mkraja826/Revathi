@@ -45,11 +45,6 @@ export default function Home() {
             <Link href="/courses" className="button button-primary" data-cursor="EXPLORE">See the courses</Link>
             <Link href="/bridal-studio" className="button button-ghost" data-cursor="VIEW">View bridal work</Link>
           </div>
-          <div className="hero-signoff">
-            <span>REVATHI BLUSH</span>
-            <i />
-            <span>LB NAGAR</span>
-          </div>
         </div>
 
         <div className="hero-visual art-directed-hero">
@@ -142,7 +137,9 @@ export default function Home() {
           <div><p className="eyebrow">IN THE ACADEMY</p><h2>The process deserves<br />to be seen.</h2></div>
           <Link href="/student-stories" className="text-link">Student work →</Link>
         </div>
-        <div className="drag-gallery">
+        <div className="gallery-scroll-shell">
+          <div className="gallery-scroll-hint" aria-hidden="true"><span>Swipe / drag</span><b>→</b></div>
+          <div className="drag-gallery">
           {[
             ["CLASSROOM", temporaryImages.academyPractice],
             ["PRACTICE", temporaryImages.makeupSession],
@@ -154,6 +151,7 @@ export default function Home() {
               <span>{String(i+1).padStart(2,"0")} /</span><strong>{label}</strong>
             </div>
           ))}
+          </div>
         </div>
       </section>
 
