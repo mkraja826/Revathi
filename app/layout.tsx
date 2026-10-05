@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
+  icons: {
+    icon: "/revathi-logo.svg",
+  },
   openGraph: {
     type: "website",
     url: "https://revathi.karthikraja826.workers.dev/",
