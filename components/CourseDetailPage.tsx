@@ -13,6 +13,13 @@ type CourseDetailProps = {
 
 export default function CourseDetailPage({ eyebrow, title, intro, image, imageAlt, focus, suitedFor }: CourseDetailProps) {
   const message = encodeURIComponent("Hi Revathi Blush, I would like details about the " + title + " course.");
+  const learningPaths = [
+    ["Professional Makeup", "/courses/professional-makeup"],
+    ["Bridal Makeup", "/courses/bridal-makeup"],
+    ["Hair Styling", "/courses/hair-styling"],
+    ["Saree Draping", "/courses/saree-draping"],
+    ["Masterclasses", "/courses/masterclasses"],
+  ].filter(([label]) => label !== title);
 
   return (
     <main className="course-detail-page">
@@ -68,6 +75,22 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
           <article><span>01</span><h3>Enquire</h3><p>Tell the academy which course you are interested in and your current experience level.</p></article>
           <article><span>02</span><h3>Confirm</h3><p>Get the current syllabus, fees, duration and available batch information directly.</p></article>
           <article><span>03</span><h3>Decide</h3><p>Choose the batch only after the current details are clear and suitable for you.</p></article>
+        </div>
+      </section>
+
+      <section className="related-courses">
+        <div className="related-courses-head">
+          <p className="eyebrow">OTHER LEARNING PATHS</p>
+          <h2>Explore another skill.</h2>
+        </div>
+        <div className="related-course-links">
+          {learningPaths.map(([label, href], index) => (
+            <Link key={href} href={href}>
+              <span>0{index + 1}</span>
+              <strong>{label}</strong>
+              <b>↗</b>
+            </Link>
+          ))}
         </div>
       </section>
 
