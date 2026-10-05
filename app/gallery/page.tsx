@@ -24,8 +24,8 @@ export default function Page() {
     <main>
       <PageHero
         eyebrow="PORTFOLIO"
-        title="A closer look at the aesthetic."
-        copy="Bridal beauty, academy practice and finishing details that reflect the visual direction of Revathi Blush."
+        title="Explore makeup, bridal and academy work."
+        copy="Browse bridal looks, makeup practice and beauty styling from Revathi Blush."
         hideGallery
       />
       <section className="inner-section gallery-page-section">
