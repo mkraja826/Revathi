@@ -23,17 +23,17 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <PageHero eyebrow="FAQ" title="Useful answers before you get in touch." copy="Courses, admissions, bridal bookings and visiting the studio." hideEnquire hideGallery />
+      <PageHero eyebrow="FAQ" title="Frequently asked questions." copy="Find answers about courses, admissions, bridal makeup and visiting the studio." hideEnquire hideGallery />
       <section className="inner-section faq-page-layout">
         <div className="faq-page-intro">
           <p className="eyebrow">QUICK ANSWERS</p>
-          <h2>Start with the question.</h2>
+          <h2>Quick answers before you contact us.</h2>
           <p>Course, admission and bridal details can change. These answers cover the basics before you contact the studio.</p>
         </div>
         <FaqAccordion items={faqs} />
       </section>
       <section className="inner-cta">
-        <div><p className="eyebrow eyebrow-light">READY TO ENQUIRE?</p><h2>Go straight to admissions or bridal booking.</h2></div>
+        <div><p className="eyebrow eyebrow-light">READY TO ENQUIRE?</p><h2>Contact us for course or bridal enquiries.</h2></div>
         <Link className="button button-light" href="/contact">Contact Revathi Blush</Link>
       </section>
     </main>
