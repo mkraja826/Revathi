@@ -3,6 +3,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/bridal-studio/" },
   title: "Bridal Makeup Artist in LB Nagar, Hyderabad",
   description: "Explore bridal, engagement and reception makeup enquiries at Revathi Blush Studio & Academy in LB Nagar, Hyderabad.",
 };
