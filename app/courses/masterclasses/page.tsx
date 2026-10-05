@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CourseDetailPage from "@/components/CourseDetailPage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/courses/masterclasses/" },
   title: "Makeup Masterclasses",
   description: "Explore focused makeup and beauty masterclasses at Revathi Blush Studio & Academy in LB Nagar, Hyderabad.",
 };
