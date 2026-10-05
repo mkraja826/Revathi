@@ -1589,3 +1589,71 @@ p{line-height:1.72}
 @media (min-width:640px){
   .gallery-helper{margin-left:auto}
 }
+
+
+/* Authentic Revathi brand mark */
+.brand-mark-logo{
+  width:42px;
+  height:42px;
+  border:0;
+  border-radius:0;
+  background:transparent;
+  display:grid;
+  place-items:center;
+  flex:0 0 auto;
+}
+.brand-mark-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+.page-hero-art>img{
+  width:88px;
+  height:80px;
+  object-fit:contain;
+  display:block;
+}
+.footer{
+  position:relative;
+  overflow:hidden;
+}
+.footer::after{
+  content:"";
+  position:absolute;
+  right:-38px;
+  bottom:-72px;
+  width:230px;
+  height:210px;
+  background:url("/revathi-logo.svg") center/contain no-repeat;
+  opacity:.07;
+  pointer-events:none;
+}
+.footer>*{
+  position:relative;
+  z-index:1;
+}
+@media (max-width:419px){
+  .brand-mark-logo{width:36px;height:36px}
+  .page-hero-art>img{width:74px;height:67px}
+  .footer::after{
+    right:-46px;
+    bottom:-44px;
+    width:175px;
+    height:160px;
+  }
+}
+@media (min-width:900px){
+  .brand-mark-logo{width:46px;height:46px}
+  .page-hero-art>img{
+    width:178px;
+    height:160px;
+  }
+  .footer::after{
+    right:5vw;
+    bottom:-105px;
+    width:360px;
+    height:325px;
+    opacity:.055;
+  }
+}
