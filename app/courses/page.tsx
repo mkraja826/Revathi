@@ -15,35 +15,35 @@ const programs = [
     title: "Professional Makeup",
     href: "/courses/professional-makeup",
     image: "https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1400&q=82",
-    copy: "A foundation for students who want to understand makeup as a professional service, not just a look.",
+    copy: "Learn essential makeup techniques, product use and professional working methods.",
   },
   {
     index: "02",
     title: "Bridal Makeup",
     href: "/courses/bridal-makeup",
     image: "https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1400&q=82",
-    copy: "Bridal-focused artistry shaped around wear time, photography, outfit and occasion.",
+    copy: "Learn bridal makeup techniques for long wear, photography and different wedding occasions.",
   },
   {
     index: "03",
     title: "Hair Styling",
     href: "/courses/hair-styling",
     image: "https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1400&q=82",
-    copy: "A practical styling path for bridal and occasion work.",
+    copy: "Learn practical hair styling for bridal and special occasions.",
   },
   {
     index: "04",
     title: "Saree Draping",
     href: "/courses/saree-draping",
     image: "https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1400&q=82",
-    copy: "A focused service skill for artists working with bridal and occasion clients.",
+    copy: "Learn saree draping techniques for bridal and special occasions.",
   },
   {
     index: "05",
     title: "Masterclasses",
     href: "/courses/masterclasses",
     image: "https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1400&q=82",
-    copy: "Short-format sessions for artists who want to sharpen a particular technique.",
+    copy: "Focused sessions for makeup artists who want to improve a specific skill.",
   },
 ];
 
@@ -52,8 +52,8 @@ export default function Page() {
     <main>
       <PageHero
         eyebrow="ACADEMY / COURSES"
-        title="Choose what you want to get good at."
-        copy="Five focused learning paths. Batch dates, duration and fees are shared directly by the academy."
+        title="Choose the course you want to learn."
+        copy="Explore five beauty training options. Contact the academy for current batch dates, course duration and fees."
       />
 
       <section className="inner-section course-catalogue">
@@ -82,7 +82,7 @@ export default function Page() {
       <section className="inner-cta">
         <div>
           <p className="eyebrow eyebrow-light">NOT SURE WHICH COURSE?</p>
-          <h2>Tell us where you&apos;re starting from.</h2>
+          <h2>Tell us what you want to learn.</h2>
         </div>
         <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20please%20help%20me%20choose%20the%20right%20course." target="_blank" rel="noreferrer">Ask the academy</a>
       </section>
