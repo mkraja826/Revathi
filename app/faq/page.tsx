@@ -23,13 +23,12 @@ const faqs = [
 export default function Page() {
   return (
     <main>
-      <PageHero eyebrow="FAQ" title="Useful answers before you message us." copy="Courses, admissions, bridal bookings and visiting the studio." />
+      <PageHero eyebrow="FAQ" title="Useful answers before you get in touch." copy="Courses, admissions, bridal bookings and visiting the studio." hideEnquire hideGallery />
       <section className="inner-section faq-page-layout">
         <div className="faq-page-intro">
           <p className="eyebrow">QUICK ANSWERS</p>
-          <h2>Still unsure after reading?</h2>
-          <p>Send the academy a WhatsApp message with the course or service you are interested in.</p>
-          <a className="text-link" href="https://wa.me/917095657382" target="_blank" rel="noreferrer">Ask on WhatsApp →</a>
+          <h2>Start with the question.</h2>
+          <p>Course, admission and bridal details can change. These answers cover the basics before you contact the studio.</p>
         </div>
         <FaqAccordion items={faqs} />
       </section>
