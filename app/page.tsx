@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 
 const courses = [
-  { title: "Professional Makeup", copy: "Foundations, finish and the working habits behind a professional kit.", href: "/courses/professional-makeup", number: "01" },
-  { title: "Bridal Makeup", copy: "Bridal-focused artistry with attention to skin, detail and camera-ready finish.", href: "/courses/bridal-makeup", number: "02" },
-  { title: "Hair Styling", copy: "Styling for bridal and occasion work, from prep through finishing.", href: "/courses/hair-styling", number: "03" },
-  { title: "Saree Draping", copy: "A focused service skill for bridal and occasion dressing.", href: "/courses/saree-draping", number: "04" },
-  { title: "Masterclasses", copy: "Short-format sessions for artists sharpening a specific part of their work.", href: "/courses/masterclasses", number: "05" },
+  { title: "Professional Makeup", copy: "Learn essential makeup techniques, product use and professional working methods.", href: "/courses/professional-makeup", number: "01" },
+  { title: "Bridal Makeup", copy: "Learn bridal makeup for long wear, photography and different wedding occasions.", href: "/courses/bridal-makeup", number: "02" },
+  { title: "Hair Styling", copy: "Learn practical hair styling for bridal and special occasions.", href: "/courses/hair-styling", number: "03" },
+  { title: "Saree Draping", copy: "Learn saree draping techniques for bridal and special occasions.", href: "/courses/saree-draping", number: "04" },
+  { title: "Masterclasses", copy: "Focused sessions for makeup artists who want to improve a specific skill.", href: "/courses/masterclasses", number: "05" },
 ];
 
 const temporaryImages = {
@@ -27,10 +27,10 @@ const temporaryImages = {
 };
 
 const standards = [
-  ["01", "Technique before trends", "Good work should hold up after the reel ends."],
-  ["02", "Practice that shows", "Learning should be visible in the hand, not just in notes."],
-  ["03", "Finish matters", "Skin, hair, drape and detail should feel considered as one look."],
-  ["04", "Professional confidence", "The goal is not only to know the steps, but to work with assurance."],
+  ["01", "Strong foundations", "Learn techniques you can use confidently in real client work."],
+  ["02", "Hands-on practice", "Build your skills through practical work and guided correction."],
+  ["03", "Attention to detail", "Learn to bring makeup, hair and styling together as one complete look."],
+  ["04", "Work with confidence", "Understand the process so you can work more confidently and consistently."],
 ];
 
 export default function Home() {
@@ -67,11 +67,11 @@ export default function Home() {
       <section className="section intro-section human-intro">
         <Reveal><p className="eyebrow">REVATHI BLUSH</p></Reveal>
         <div className="split-heading">
-          <Reveal><h2>A working beauty brand.<br /><em>Built around the craft.</em></h2></Reveal>
+          <Reveal><h2>Bridal makeup and<br /><em>professional beauty training.</em></h2></Reveal>
           <Reveal delay={100}>
             <div className="intro-copy">
-              <p>The studio and academy sit under one point of view: thoughtful technique, polished finishing and work that still feels like the person wearing it.</p>
-              <Link href="/about" className="text-link">The story behind Revathi Blush →</Link>
+              <p>Revathi Blush combines bridal makeup services with practical beauty training at one studio in LB Nagar, Hyderabad.</p>
+              <Link href="/about" className="text-link">About Revathi Blush →</Link>
             </div>
           </Reveal>
         </div>
@@ -87,14 +87,14 @@ export default function Home() {
           </Reveal>
           <Reveal delay={220} className="editorial-note">
             <span className="hand-note">studio note</span>
-            <p>Beauty is personal. Technique is learned. The best work respects both.</p>
+            <p>Personal service for clients. Practical training for students.</p>
           </Reveal>
         </div>
       </section>
 
       <section className="section courses-section human-courses">
         <div className="section-top">
-          <div><p className="eyebrow">COURSES</p><h2>Learn one skill well.<br />Then build from there.</h2></div>
+          <div><p className="eyebrow">COURSES</p><h2>Choose the beauty skill<br />you want to learn.</h2></div>
           <Link href="/courses" className="text-link">All courses →</Link>
         </div>
         <div className="course-list">
@@ -115,10 +115,10 @@ export default function Home() {
         <div className="standards-heading">
           <Reveal>
             <p className="eyebrow eyebrow-light">THE STANDARD</p>
-            <h2>What should<br />show in the work.</h2>
+            <h2>What we focus on<br />in training.</h2>
           </Reveal>
           <Reveal delay={100}>
-            <p className="standards-lede">A beauty academy should feel practical, exact and personal. These are the principles guiding the Revathi Blush experience.</p>
+            <p className="standards-lede">Training focuses on clear technique, practical experience, attention to detail and confidence.</p>
           </Reveal>
         </div>
         <div className="standards-list">
@@ -134,7 +134,7 @@ export default function Home() {
 
       <section className="section students-section">
         <div className="section-top">
-          <div><p className="eyebrow">IN THE ACADEMY</p><h2>The process deserves<br />to be seen.</h2></div>
+          <div><p className="eyebrow">IN THE ACADEMY</p><h2>Learn through<br />practice and progress.</h2></div>
           <Link href="/student-stories" className="text-link">Student work →</Link>
         </div>
         <div className="gallery-scroll-shell">
@@ -162,8 +162,8 @@ export default function Home() {
         </div>
         <div className="bridal-band-copy">
           <p className="eyebrow eyebrow-light">BRIDAL STUDIO</p>
-          <h2>Still you.<br /><em>Just beautifully finished.</em></h2>
-          <p>Bridal, engagement and occasion artistry with the final look shaped around the person, outfit and event.</p>
+          <h2>Bridal makeup<br /><em>planned around you.</em></h2>
+          <p>Makeup for weddings, engagements, receptions and special occasions, planned around your outfit, event and preferred style.</p>
           <Link href="/bridal-studio" className="button button-light" data-cursor="VIEW">Bridal studio</Link>
         </div>
       </section>
@@ -172,8 +172,8 @@ export default function Home() {
         <div className="proof-index">05</div>
         <Reveal>
           <p className="eyebrow">LB NAGAR · HYDERABAD</p>
-          <h2>A local studio with<br />a serious point of view.</h2>
-          <p>Visit Revathi Blush for academy enquiries, course information and bridal consultations in Shivapuri Colony, LB Nagar.</p>
+          <h2>Studio and academy<br />in LB Nagar, Hyderabad.</h2>
+          <p>Visit Revathi Blush in Shivapuri Colony for course information, academy admissions and bridal makeup enquiries.</p>
           <Link href="/contact" className="text-link">Visit / contact →</Link>
         </Reveal>
       </section>
@@ -181,7 +181,7 @@ export default function Home() {
       <section className="section faq-preview">
         <div>
           <p className="eyebrow">BEFORE YOU JOIN</p>
-          <h2>A few useful<br />questions first.</h2>
+          <h2>Common questions<br />before you enquire.</h2>
           <Link href="/faq" className="text-link">All FAQs →</Link>
         </div>
         <div className="faq-static">
@@ -194,7 +194,7 @@ export default function Home() {
       <section className="cta-section human-cta">
         <div>
           <p className="eyebrow eyebrow-light">LB NAGAR · HYDERABAD</p>
-          <h2>Come by the studio.<br />Ask about the academy.</h2>
+          <h2>Contact the studio<br />or ask about a course.</h2>
         </div>
         <div className="cta-side">
           <p>For course admissions, bridal enquiries and batch information.</p>
