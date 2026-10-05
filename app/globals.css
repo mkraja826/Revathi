@@ -1657,3 +1657,50 @@ p{line-height:1.72}
     opacity:.055;
   }
 }
+
+
+/* Mobile brand precision pass */
+@media (max-width:639px){
+  .site-header{
+    height:68px;
+    padding-inline:20px;
+  }
+  .brand{
+    gap:8px;
+  }
+  .brand-mark-logo{
+    width:44px;
+    height:44px;
+  }
+  .brand strong{
+    font-size:11px;
+    letter-spacing:.12em;
+    line-height:1.1;
+  }
+  .brand small{
+    font-size:7px;
+    letter-spacing:.2em;
+    margin-top:3px;
+  }
+  .bridal-page-copy{
+    padding:54px 28px 62px;
+  }
+  .bridal-page-copy h1{
+    font-size:55px;
+    line-height:.89;
+    letter-spacing:-.042em;
+    text-wrap:balance;
+  }
+  .bridal-page-copy>p:not(.eyebrow){
+    font-size:12px;
+    line-height:1.65;
+    margin:22px 0 26px;
+  }
+}
+@media (max-width:374px){
+  .brand-mark-logo{width:40px;height:40px}
+  .brand strong{font-size:10px}
+  .brand small{font-size:6.5px}
+  .bridal-page-copy{padding-inline:22px}
+  .bridal-page-copy h1{font-size:50px}
+}
