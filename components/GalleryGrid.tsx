@@ -45,6 +45,7 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
           </button>
         ))}
         </div>
+        <span className="gallery-helper">Tap an image to view full size</span>
       </div>
 
       <div className="portfolio-grid">
