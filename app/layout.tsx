@@ -12,6 +12,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://revathi.karthikraja826.workers.dev"),
   title: {
     default: "Revathi Blush Studio & Academy | LB Nagar, Hyderabad",
     template: "%s | Revathi Blush",
@@ -31,7 +32,13 @@ export const metadata: Metadata = {
   },
   openGraph: {
     type: "website",
+    url: "https://revathi.karthikraja826.workers.dev/",
     locale: "en_IN",
+    title: "Revathi Blush Studio & Academy",
+    description: "Professional makeup academy and bridal studio in LB Nagar, Hyderabad.",
+  },
+  twitter: {
+    card: "summary_large_image",
     title: "Revathi Blush Studio & Academy",
     description: "Professional makeup academy and bridal studio in LB Nagar, Hyderabad.",
   },
