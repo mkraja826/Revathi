@@ -31,7 +31,9 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
 
   return (
     <>
-      <div className="gallery-filter" aria-label="Gallery filters">
+      <div className="gallery-filter-wrap">
+        <span className="gallery-filter-label">FILTER</span>
+        <div className="gallery-filter" aria-label="Gallery filters">
         {categories.map((category) => (
           <button
             key={category}
@@ -42,6 +44,7 @@ export default function GalleryGrid({ items }: { items: GalleryItem[] }) {
             {category}
           </button>
         ))}
+        </div>
       </div>
 
       <div className="portfolio-grid">
