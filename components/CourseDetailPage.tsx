@@ -43,7 +43,7 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
         <Reveal>
           <div className="course-who">
             <p className="eyebrow">BEFORE YOU ENROL</p>
-            <h2>Ask the academy how this course fits your current experience and goals.</h2>
+            <h2>Contact the academy to check whether this course suits your experience level and goals.</h2>
           </div>
         </Reveal>
 
@@ -81,7 +81,7 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
       <section className="related-courses">
         <div className="related-courses-head">
           <p className="eyebrow">OTHER LEARNING PATHS</p>
-          <h2>Explore another skill.</h2>
+          <h2>Explore other courses.</h2>
         </div>
         <div className="related-course-links">
           {learningPaths.map(([label, href], index) => (
@@ -95,7 +95,7 @@ export default function CourseDetailPage({ eyebrow, title, intro, image, imageAl
       </section>
 
       <section className="inner-cta">
-        <div><p className="eyebrow eyebrow-light">READY TO ASK?</p><h2>Get the current batch details directly.</h2></div>
+        <div><p className="eyebrow eyebrow-light">READY TO ASK?</p><h2>Get the latest batch details.</h2></div>
         <a className="button button-light" href={"https://wa.me/917095657382?text=" + message} target="_blank" rel="noreferrer">WhatsApp academy</a>
       </section>
     </main>
