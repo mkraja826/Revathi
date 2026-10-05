@@ -14,8 +14,8 @@ export default function Page() {
       <section className="about-hero">
         <div className="about-hero-copy">
           <p className="eyebrow">ABOUT REVATHI BLUSH</p>
-          <h1>A studio and academy<br /><em>with one point of view.</em></h1>
-          <p>Makeup should feel polished without losing the person underneath it. Training should feel practical enough to use beyond the classroom.</p>
+          <h1>Bridal makeup and beauty training<br /><em>under one brand.</em></h1>
+          <p>Revathi Blush offers bridal makeup services and practical beauty training in LB Nagar, Hyderabad.</p>
         </div>
         <div className="about-hero-image">
           <img src="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1600&q=82" alt="Makeup artist at work" fetchPriority="high" />
@@ -27,24 +27,24 @@ export default function Page() {
         <Reveal>
           <div>
             <p className="eyebrow">THE BRAND</p>
-            <h2>Beauty work,<br />treated like a craft.</h2>
+            <h2>Professional beauty services<br />and practical training.</h2>
           </div>
         </Reveal>
         <Reveal delay={100}>
           <div className="about-story-copy">
             <p>Revathi Blush brings bridal artistry and professional makeup education under one brand in LB Nagar, Hyderabad.</p>
-            <p>The focus is simple: considered technique, personal service and a polished finish.</p>
-            <Link href="/gallery" className="text-link">See the visual work →</Link>
+            <p>The focus is simple: clear technique, personal service and a polished result.</p>
+            <Link href="/gallery" className="text-link">View the gallery →</Link>
           </div>
         </Reveal>
       </section>
 
       <section className="about-principles">
         {[
-          ["01","Personal","Every face, event and learner starts from a different place."],
-          ["02","Practical","Technique matters most when it can be repeated confidently."],
-          ["03","Polished","Details should feel intentional from preparation through finish."],
-          ["04","Progressive","The goal is visible improvement, not just completing a class."],
+          ["01","Personal","Every client and student has different needs and goals."],
+          ["02","Practical","Learn techniques you can practise and use with confidence."],
+          ["03","Polished","Careful preparation and finishing help create a complete look."],
+          ["04","Progressive","The goal is to improve your skills through learning and practice."],
         ].map(([n,title,copy], index) => (
           <Reveal key={title} delay={index * 60}>
             <article>
@@ -62,7 +62,7 @@ export default function Page() {
       </section>
 
       <section className="inner-cta">
-        <div><p className="eyebrow eyebrow-light">EXPLORE REVATHI BLUSH</p><h2>Choose the academy or the studio.</h2></div>
+        <div><p className="eyebrow eyebrow-light">EXPLORE REVATHI BLUSH</p><h2>Explore courses or bridal services.</h2></div>
         <div className="booking-actions">
           <Link className="button button-light" href="/courses">Explore courses</Link>
           <Link className="button button-outline-light" href="/bridal-studio">Bridal studio</Link>
