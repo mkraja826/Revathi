@@ -3,6 +3,7 @@ import Link from "next/link";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/testimonials/" },
   title: "Reviews & Student Stories",
   description: "Explore public feedback and student stories from Revathi Blush Studio & Academy in LB Nagar, Hyderabad.",
 };
