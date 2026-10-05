@@ -4,6 +4,7 @@ import PageHero from "@/components/PageHero";
 import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "https://revathi.karthikraja826.workers.dev/courses/" },
   title: "Makeup Courses in LB Nagar, Hyderabad",
   description: "Explore professional makeup, bridal makeup, hair styling, saree draping and masterclass programs at Revathi Blush Studio & Academy.",
 };
