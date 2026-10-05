@@ -13,8 +13,8 @@ export default function Page() {
     <main>
       <PageHero
         eyebrow="CONTACT / ADMISSIONS"
-        title="Come by. Call. Or send a quick WhatsApp."
-        copy="Revathi Blush Studio & Academy · Shivapuri Colony, LB Nagar, Hyderabad 500074."
+        title="Contact Revathi Blush."
+        copy="Call, WhatsApp or visit Revathi Blush Studio & Academy in Shivapuri Colony, LB Nagar, Hyderabad 500074."
         hideEnquire
       />
 
