@@ -9,10 +9,10 @@ export const metadata: Metadata = {
 };
 
 const stages = [
-  ["01","Start","Understand the tools, products and basic control behind the work."],
-  ["02","Practice","Repeat techniques with guidance until the process feels less uncertain."],
-  ["03","Refine","Notice the small things: balance, finish, speed and consistency."],
-  ["04","Present","Build work that can be photographed, discussed and shown professionally."],
+  ["01","Start","Learn the tools, products and basic techniques."],
+  ["02","Practice","Practise techniques with guidance and correction."],
+  ["03","Refine","Improve balance, finish, speed and consistency."],
+  ["04","Present","Learn how to present and photograph your finished work."],
 ];
 
 export default function Page() {
@@ -21,8 +21,8 @@ export default function Page() {
       <section className="student-hero">
         <div className="student-hero-copy">
           <p className="eyebrow">STUDENT JOURNEY</p>
-          <h1>From practice<br /><em>to portfolio.</em></h1>
-          <p>The work gets stronger through repetition: understanding the process, correcting the details and learning to present the final result with confidence.</p>
+          <h1>Learn. Practice.<br /><em>Improve.</em></h1>
+          <p>Students build their skills through clear instruction, repeated practice, correction and presentation.</p>
         </div>
         <div className="student-hero-image">
           <img src="https://images.unsplash.com/photo-1773688189408-f8f8c12c5ae9?auto=format&fit=crop&w=1600&q=82" alt="Makeup training session" fetchPriority="high" />
@@ -32,8 +32,8 @@ export default function Page() {
 
       <section className="inner-section student-progress">
         <Reveal>
-          <p className="eyebrow">THE LEARNING ARC</p>
-          <h2>Not overnight.<br />Built step by step.</h2>
+          <p className="eyebrow">HOW SKILLS DEVELOP</p>
+          <h2>Build your skills<br />step by step.</h2>
         </Reveal>
         <div className="student-stage-list">
           {stages.map(([number,title,copy], index) => (
@@ -53,14 +53,14 @@ export default function Page() {
         <div><img src="https://images.unsplash.com/photo-1773688199710-040ad7ddac18?auto=format&fit=crop&w=1400&q=82" alt="Makeup technique detail" loading="lazy" /></div>
         <div className="student-editorial-note">
           <p className="eyebrow">STUDENT WORK</p>
-          <h2>Practice. Refine. Present the work with confidence.</h2>
+          <h2>Practise your skills and improve your finished work.</h2>
           <Link className="text-link" href="/gallery">View gallery →</Link>
         </div>
       </section>
 
       <section className="inner-cta">
-        <div><p className="eyebrow eyebrow-light">START YOUR OWN JOURNEY</p><h2>Ask which course fits your current level.</h2></div>
-        <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20want%20help%20choosing%20a%20course." target="_blank" rel="noreferrer">Ask the academy</a>
+        <div><p className="eyebrow eyebrow-light">INTERESTED IN A COURSE?</p><h2>Find a course that suits your current experience.</h2></div>
+        <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20want%20help%20choosing%20a%20course." target="_blank" rel="noreferrer">Get course advice</a>
       </section>
     </main>
   );
