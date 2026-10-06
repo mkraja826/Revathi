@@ -25,7 +25,7 @@ export default function Page() {
           <p>Practical makeup and beauty training in LB Nagar, Hyderabad, for beginners and developing artists.</p>
           <div className="hero-actions">
             <Link className="button button-primary" href="/courses">View courses</Link>
-            <a className="button button-ghost" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20want%20academy%20admission%20details." target="_blank" rel="noreferrer">Ask about admissions</a>
+            <a className="button button-ghost" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20want%20academy%20admission%20details." target="_blank" rel="noreferrer">Admissions on WhatsApp</a>
           </div>
         </div>
         <div className="academy-hero-stack">
@@ -87,7 +87,7 @@ export default function Page() {
             <p className="eyebrow">ADMISSIONS</p>
             <h2>Get the latest course details.</h2>
             <p>Course duration, fees, batch dates and certificate details may vary by program. Contact the academy for the latest information before you enrol.</p>
-            <a className="text-link" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20please%20share%20current%20academy%20batch%20details." target="_blank" rel="noreferrer">Ask for current batch details →</a>
+            <a className="text-link" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20please%20share%20current%20academy%20batch%20details." target="_blank" rel="noreferrer">Get fees & batch details →</a>
           </div>
         </Reveal>
       </section>
