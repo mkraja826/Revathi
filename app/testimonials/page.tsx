@@ -13,8 +13,8 @@ export default function Page() {
     <main>
       <section className="reviews-hero">
         <p className="eyebrow">REVIEWS / STORIES</p>
-        <h1>Experiences that<br /><em>speak for themselves.</em></h1>
-        <p>For current public feedback, visit the Revathi Blush Google profile or explore the student journey through the academy.</p>
+        <h1>Reviews and<br /><em>student experiences.</em></h1>
+        <p>See current public reviews on Google and learn more about the academy experience.</p>
       </section>
 
       <section className="inner-section reviews-status">
@@ -32,18 +32,18 @@ export default function Page() {
         <Reveal delay={100}>
           <div className="reviews-copy">
             <p className="eyebrow">STUDENT JOURNEY</p>
-            <h2>Progress is part of the story.</h2>
-            <p>Explore how the academy experience moves from learning and practice toward stronger technique, presentation and confidence.</p>
-            <Link href="/student-stories" className="text-link">Student stories →</Link>
+            <h2>See the student learning journey.</h2>
+            <p>See how students move from learning the basics to practice, improvement and presentation.</p>
+            <Link href="/student-stories" className="text-link">View student journey →</Link>
           </div>
         </Reveal>
       </section>
 
       <section className="review-types">
         {[
-          ["01","Academy experience","Learning, practice and the classroom experience."],
-          ["02","Skill progress","How confidence and consistency build over time."],
-          ["03","Bridal clients","Feedback connected to real service experiences."],
+          ["01","Academy experience","Feedback about learning, practice and the academy experience."],
+          ["02","Skill progress","How students develop their skills through practice."],
+          ["03","Bridal clients","Feedback from bridal and beauty service clients."],
         ].map(([n,title,copy], i) => (
           <Reveal key={title} delay={i*60}>
             <article><span>{n}</span><h3>{title}</h3><p>{copy}</p></article>
@@ -52,7 +52,7 @@ export default function Page() {
       </section>
 
       <section className="inner-cta">
-        <div><p className="eyebrow eyebrow-light">EXPERIENCED REVATHI BLUSH?</p><h2>Your feedback helps the next person decide.</h2></div>
+        <div><p className="eyebrow eyebrow-light">EXPERIENCED REVATHI BLUSH?</p><h2>Share your experience on Google.</h2></div>
         <a className="button button-light" href="https://www.google.com/maps/search/?api=1&query=Revathi%20Blush%20Studio%20%26%20Academy%20LB%20Nagar%20Hyderabad" target="_blank" rel="noreferrer">Open Google profile</a>
       </section>
     </main>
