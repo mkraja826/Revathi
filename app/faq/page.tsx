@@ -33,8 +33,8 @@ export default function Page() {
         <FaqAccordion items={faqs} />
       </section>
       <section className="inner-cta">
-        <div><p className="eyebrow eyebrow-light">READY TO ENQUIRE?</p><h2>Contact us for course or bridal enquiries.</h2></div>
-        <Link className="button button-light" href="/contact">Contact Revathi Blush</Link>
+        <div><p className="eyebrow eyebrow-light">NEED MORE INFORMATION?</p><h2>Contact us for course or bridal enquiries.</h2></div>
+        <Link className="button button-light" href="/contact">Contact us</Link>
       </section>
     </main>
   );
