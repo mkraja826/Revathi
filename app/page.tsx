@@ -4,8 +4,8 @@ import Reveal from "@/components/Reveal";
 
 export const metadata: Metadata = {
   alternates: { canonical: "https://revathi.karthikraja826.workers.dev/" },
-  title: "Revathi Blush Studio & Academy | LB Nagar, Hyderabad",
-  description: "Professional makeup academy and bridal studio in LB Nagar, Hyderabad. Explore courses, bridal artistry, student work and enquiries.",
+  title: "Makeup Academy & Bridal Makeup | Revathi Blush Hyderabad",
+  description: "Makeup courses and bridal makeup services at Revathi Blush in LB Nagar, Hyderabad. Explore courses, bridal services, gallery and contact details.",
 };
 
 
@@ -39,11 +39,11 @@ export default function Home() {
       <section className="hero human-hero">
         <div className="hero-content">
           <p className="eyebrow hero-eyebrow">REVATHI BLUSH · STUDIO & ACADEMY · HYDERABAD</p>
-          <h1><span>For brides.</span><span>For artists in the making.</span></h1>
-          <p className="hero-copy">Professional makeup education and bridal artistry from LB Nagar, Hyderabad.</p>
+          <h1><span>Makeup Academy.</span><span>Bridal Makeup Studio.</span></h1>
+          <p className="hero-copy">Professional makeup courses and bridal makeup services in LB Nagar, Hyderabad.</p>
           <div className="hero-actions">
-            <Link href="/courses" className="button button-primary" data-cursor="EXPLORE">View courses</Link>
-            <Link href="/bridal-studio" className="button button-ghost" data-cursor="VIEW">Bridal makeup</Link>
+            <Link href="/courses" className="button button-primary" data-cursor="EXPLORE">Explore makeup courses</Link>
+            <Link href="/bridal-studio" className="button button-ghost" data-cursor="VIEW">Explore bridal makeup</Link>
           </div>
         </div>
 
@@ -61,7 +61,7 @@ export default function Home() {
       </section>
 
       <section className="studio-strip" aria-label="Revathi Blush services">
-        <span>MAKEUP</span><i /> <span>HAIR</span><i /> <span>BRIDAL</span><i /> <span>ACADEMY</span>
+        <span>MAKEUP COURSES</span><i /> <span>HAIR STYLING</span><i /> <span>BRIDAL MAKEUP</span><i /> <span>SAREE DRAPING</span>
       </section>
 
       <section className="section intro-section human-intro">
@@ -86,8 +86,8 @@ export default function Home() {
             <small>BEAUTY TRAINING</small>
           </Reveal>
           <Reveal delay={220} className="editorial-note">
-            <span className="hand-note">studio note</span>
-            <p>Personal service for clients. Practical training for students.</p>
+            <span className="hand-note">STUDIO & ACADEMY</span>
+            <p>Bridal makeup for clients. Practical beauty training for students.</p>
           </Reveal>
         </div>
       </section>
