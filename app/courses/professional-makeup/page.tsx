@@ -12,10 +12,10 @@ export default function Page() {
     <CourseDetailPage
       eyebrow="COURSE 01"
       title="Professional Makeup"
-      intro="A strong starting point for students who want to learn makeup as a real client-facing skill."
+      intro="Learn essential makeup skills for professional client work."
       image="https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1600&q=82"
       imageAlt="Professional makeup training reference"
-      suitedFor="Beginners and aspiring artists who want a more structured foundation."
+      suitedFor="Beginners and aspiring makeup artists."
       focus={["Skin preparation & product understanding","Base, complexion & finish","Eye makeup & balance","Professional workflow & presentation"]}
     />
   );
