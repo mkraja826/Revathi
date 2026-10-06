@@ -12,10 +12,10 @@ export default function Page() {
     <CourseDetailPage
       eyebrow="COURSE 02"
       title="Bridal Makeup"
-      intro="A bridal-focused path for artists who want to understand finish, detail, longevity and the full look."
+      intro="Learn bridal makeup techniques for long wear, photography and complete bridal looks."
       image="https://images.unsplash.com/photo-1779253688787-7d860ad39fe0?auto=format&fit=crop&w=1600&q=82"
       imageAlt="Bridal makeup course reference"
-      suitedFor="Students and working artists who want to strengthen their bridal work."
+      suitedFor="Students and makeup artists who want to improve their bridal makeup skills."
       focus={["Bridal skin preparation","Complexion & long-wear finish","Eyes, lashes & detailing","Look planning for outfit and event"]}
     />
   );
