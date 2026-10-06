@@ -64,8 +64,8 @@ export default function Page() {
       <section className="inner-cta">
         <div><p className="eyebrow eyebrow-light">EXPLORE REVATHI BLUSH</p><h2>Explore courses or bridal services.</h2></div>
         <div className="booking-actions">
-          <Link className="button button-light" href="/courses">Explore courses</Link>
-          <Link className="button button-outline-light" href="/bridal-studio">Bridal studio</Link>
+          <Link className="button button-light" href="/courses">View courses</Link>
+          <Link className="button button-outline-light" href="/bridal-studio">Bridal makeup</Link>
         </div>
       </section>
     </main>
