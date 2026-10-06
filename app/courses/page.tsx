@@ -71,7 +71,7 @@ export default function Page() {
                 <p className="course-detail-note">Current syllabus, duration, fees and batch details are shared directly by the academy.</p>
                 <div className="program-actions">
                   <Link className="text-link" href={program.href}>Course details →</Link>
-                  <a className="text-link muted-link" href={"https://wa.me/917095657382?text=" + encodeURIComponent("Hi Revathi Blush, I would like details about the " + program.title + " course.")} target="_blank" rel="noreferrer">Ask about batch →</a>
+                  <a className="text-link muted-link" href={"https://wa.me/917095657382?text=" + encodeURIComponent("Hi Revathi Blush, I would like details about the " + program.title + " course.")} target="_blank" rel="noreferrer">Fees & batch details →</a>
                 </div>
               </div>
             </article>
@@ -84,7 +84,7 @@ export default function Page() {
           <p className="eyebrow eyebrow-light">NOT SURE WHICH COURSE?</p>
           <h2>Tell us what you want to learn.</h2>
         </div>
-        <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20please%20help%20me%20choose%20the%20right%20course." target="_blank" rel="noreferrer">Ask the academy</a>
+        <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20please%20help%20me%20choose%20the%20right%20course." target="_blank" rel="noreferrer">Get course advice</a>
       </section>
     </main>
   );
