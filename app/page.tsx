@@ -42,8 +42,8 @@ export default function Home() {
           <h1><span>For brides.</span><span>For artists in the making.</span></h1>
           <p className="hero-copy">Professional makeup education and bridal artistry from LB Nagar, Hyderabad.</p>
           <div className="hero-actions">
-            <Link href="/courses" className="button button-primary" data-cursor="EXPLORE">See the courses</Link>
-            <Link href="/bridal-studio" className="button button-ghost" data-cursor="VIEW">View bridal work</Link>
+            <Link href="/courses" className="button button-primary" data-cursor="EXPLORE">View courses</Link>
+            <Link href="/bridal-studio" className="button button-ghost" data-cursor="VIEW">Bridal makeup</Link>
           </div>
         </div>
 
@@ -56,7 +56,7 @@ export default function Home() {
             <img className="site-photo" src={temporaryImages.makeupSession} alt="Makeup artist at work" />
             <small>02 / ACADEMY</small>
           </div>
-          <div className="hero-caption">A studio practice.<br />A place to learn the craft.</div>
+          <div className="hero-caption">Bridal makeup services.<br />Professional beauty training.</div>
         </div>
       </section>
 
@@ -79,11 +79,11 @@ export default function Home() {
         <div className="editorial-grid editorial-grid-human">
           <Reveal className="editorial-card tall">
             <img className="site-photo" src={temporaryImages.studioPractice} alt="Makeup artistry reference" />
-            <small>THE CRAFT</small>
+            <small>BRIDAL MAKEUP</small>
           </Reveal>
           <Reveal delay={120} className="editorial-card academy-shot">
             <img className="site-photo" src={temporaryImages.academyPractice} alt="Makeup training reference" />
-            <small>THE ACADEMY</small>
+            <small>BEAUTY TRAINING</small>
           </Reveal>
           <Reveal delay={220} className="editorial-note">
             <span className="hand-note">studio note</span>
@@ -135,7 +135,7 @@ export default function Home() {
       <section className="section students-section">
         <div className="section-top">
           <div><p className="eyebrow">IN THE ACADEMY</p><h2>Learn through<br />practice and progress.</h2></div>
-          <Link href="/student-stories" className="text-link">Student work →</Link>
+          <Link href="/student-stories" className="text-link">Academy & student work →</Link>
         </div>
         <div className="gallery-scroll-shell">
           <div className="gallery-scroll-hint" aria-hidden="true"><span>Swipe / drag</span><b>→</b></div>
@@ -164,7 +164,7 @@ export default function Home() {
           <p className="eyebrow eyebrow-light">BRIDAL STUDIO</p>
           <h2>Bridal makeup<br /><em>planned around you.</em></h2>
           <p>Makeup for weddings, engagements, receptions and special occasions, planned around your outfit, event and preferred style.</p>
-          <Link href="/bridal-studio" className="button button-light" data-cursor="VIEW">Bridal studio</Link>
+          <Link href="/bridal-studio" className="button button-light" data-cursor="VIEW">Bridal makeup services</Link>
         </div>
       </section>
 
@@ -174,7 +174,7 @@ export default function Home() {
           <p className="eyebrow">LB NAGAR · HYDERABAD</p>
           <h2>Studio and academy<br />in LB Nagar, Hyderabad.</h2>
           <p>Visit Revathi Blush in Shivapuri Colony for course information, academy admissions and bridal makeup enquiries.</p>
-          <Link href="/contact" className="text-link">Visit / contact →</Link>
+          <Link href="/contact" className="text-link">Contact & directions →</Link>
         </Reveal>
       </section>
 
@@ -182,7 +182,7 @@ export default function Home() {
         <div>
           <p className="eyebrow">BEFORE YOU JOIN</p>
           <h2>Common questions<br />before you enquire.</h2>
-          <Link href="/faq" className="text-link">All FAQs →</Link>
+          <Link href="/faq" className="text-link">View all FAQs →</Link>
         </div>
         <div className="faq-static">
           {["Who can join the academy?","Do beginners need prior experience?","Is practical training included?","How do I ask about fees and batches?"].map((q,i)=>
