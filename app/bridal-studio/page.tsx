@@ -25,7 +25,7 @@ export default function Page() {
           <p className="eyebrow eyebrow-light">REVATHI BLUSH / BRIDAL STUDIO</p>
           <h1>Bridal makeup<br /><em>designed around you.</em></h1>
           <p>Bridal, engagement, reception and special-occasion makeup in LB Nagar, Hyderabad.</p>
-          <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20would%20like%20to%20enquire%20about%20bridal%20makeup." target="_blank" rel="noreferrer">Check availability</a>
+          <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20would%20like%20to%20enquire%20about%20bridal%20makeup." target="_blank" rel="noreferrer">Check date on WhatsApp</a>
         </div>
       </section>
 
@@ -67,7 +67,7 @@ export default function Page() {
             <p className="eyebrow">BRIDAL DETAILS</p>
             <h2>Explore bridal makeup looks.</h2>
           </div>
-          <Link className="text-link" href="/gallery">View full gallery →</Link>
+          <Link className="text-link" href="/gallery">View bridal gallery →</Link>
         </div>
         <div className="bridal-portfolio-grid">
           <Link href="/gallery" className="bridal-portfolio-card bridal-portfolio-card-large">
@@ -89,7 +89,7 @@ export default function Page() {
         <div><p className="eyebrow eyebrow-light">YOUR DATE</p><h2>Check your event date.</h2></div>
         <div className="booking-actions">
           <a className="button button-light" href="https://wa.me/917095657382?text=Hi%20Revathi%20Blush%2C%20I%20want%20to%20check%20bridal%20availability." target="_blank" rel="noreferrer">WhatsApp</a>
-          <Link className="button button-outline-light" href="/gallery">See gallery</Link>
+          <Link className="button button-outline-light" href="/gallery">View gallery</Link>
         </div>
       </section>
     </main>
