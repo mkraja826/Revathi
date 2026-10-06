@@ -12,10 +12,10 @@ export default function Page() {
     <CourseDetailPage
       eyebrow="COURSE 04"
       title="Saree Draping"
-      intro="A focused service skill for bridal and occasion work where fit, proportion and finish matter."
+      intro="Learn saree draping for bridal and special occasions, with attention to fit and finish."
       image="https://images.unsplash.com/photo-1781077126479-437220427c93?auto=format&fit=crop&w=1600&q=82"
       imageAlt="Bridal saree styling reference"
-      suitedFor="Makeup artists and beginners who want to add professional draping to their services."
+      suitedFor="Beginners and makeup artists who want to add saree draping to their services."
       focus={["Preparation & pinning","Pleats, proportion & fit","Pallu placement & finish","Bridal and occasion draping"]}
     />
   );
