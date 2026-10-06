@@ -1747,3 +1747,29 @@ p{line-height:1.72}
   .lightbox figcaption{gap:14px}
   .lightbox figcaption strong{font-size:21px;text-align:right}
 }
+
+
+/* Homepage first-screen clarity */
+.human-hero .hero-copy{max-width:560px}
+@media (max-width:639px){
+  .human-hero .hero-actions{
+    display:grid;
+    grid-template-columns:1fr;
+    width:100%;
+    max-width:360px;
+  }
+  .human-hero .hero-actions .button{
+    width:100%;
+    justify-content:center;
+    min-height:48px;
+  }
+  .studio-strip{
+    gap:12px;
+    padding-inline:18px;
+    overflow-x:auto;
+    scrollbar-width:none;
+    white-space:nowrap;
+  }
+  .studio-strip::-webkit-scrollbar{display:none}
+  .studio-strip span{font-size:9px;letter-spacing:.12em}
+}
