@@ -5,7 +5,7 @@ import CourseDetailPage from "@/components/CourseDetailPage";
 export const metadata: Metadata = {
   alternates: { canonical: "https://revathi.karthikraja826.workers.dev/courses/professional-makeup/" },
   title: "Professional Makeup Artist Course | Revathi Blush",
-  description: "Professional Makeup Artist Course at Revathi Blush, LB Nagar, Hyderabad. ₹25,000 course fee, ₹2,000 registration, practical training, bonus classes and certification.",
+  description: "Professional Makeup Artist Course at Revathi Blush, LB Nagar, Hyderabad. ₹25,000 total fee including ₹2,000 registration, practical training, bonus classes and certification.",
 };
 
 const curriculum = [
@@ -43,7 +43,7 @@ export default function Page() {
         <h2 id="course-fees-heading">Training, fees & enrollment.</h2>
         <div className="standards-list">
           <article className="standard-row"><span>01</span><h3>Course fee</h3><p>₹25,000</p></article>
-          <article className="standard-row"><span>02</span><h3>Registration fee</h3><p>₹2,000 — confirm whether this is included in the course fee when enrolling.</p></article>
+          <article className="standard-row"><span>02</span><h3>Registration fee</h3><p>₹2,000 included in the ₹25,000 course fee. No additional registration fee.</p></article>
           <article className="standard-row"><span>03</span><h3>Class timings</h3><p>11:00 AM – 4:00 PM. Contact the academy for batch dates and course duration.</p></article>
           <article className="standard-row"><span>04</span><h3>Location</h3><p>LB Nagar, Hyderabad.</p></article>
         </div>
