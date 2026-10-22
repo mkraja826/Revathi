@@ -15,7 +15,7 @@ const programs = [
     title: "Professional Makeup",
     href: "/courses/professional-makeup",
     image: "https://images.unsplash.com/photo-1773688189374-17ba02d6b1b4?auto=format&fit=crop&w=1400&q=82",
-    copy: "Learn essential makeup techniques, product use and professional working methods.",
+    copy: "Professional Makeup Artist Course: 5 makeup looks, 20+ hairstyles, bridal makeup, saree draping, practical training and certification.",
   },
   {
     index: "02",
@@ -53,7 +53,7 @@ export default function Page() {
       <PageHero
         eyebrow="ACADEMY / COURSES"
         title="Choose the course you want to learn."
-        copy="Explore five beauty training options. Contact the academy for current batch dates, course duration and fees."
+        copy="Explore five beauty training options. Our Professional Makeup Artist Course has published fees and class timings. Contact the academy to confirm upcoming batches and details for other programs."
       />
 
       <section className="inner-section course-catalogue">
@@ -68,7 +68,7 @@ export default function Page() {
                 <p className="eyebrow">PROGRAM {program.index}</p>
                 <h2>{program.title}</h2>
                 <p>{program.copy}</p>
-                <p className="course-detail-note">Current syllabus, duration, fees and batch details are shared directly by the academy.</p>
+                <p className="course-detail-note">{program.index === "01" ? "Course fee: ₹25,000 · Registration: ₹2,000 · Classes: 11 AM–4 PM · Free Beautician Course and Flower Making Class. Confirm batch dates and registration terms with the academy." : "Current syllabus, duration, fees and batch details are shared directly by the academy."}</p>
                 <div className="program-actions">
                   <Link className="text-link" href={program.href}>Course details →</Link>
                   <a className="text-link muted-link" href={"https://wa.me/917095657382?text=" + encodeURIComponent("Hi Revathi Blush, I would like details about the " + program.title + " course.")} target="_blank" rel="noreferrer">Fees & batch details →</a>
